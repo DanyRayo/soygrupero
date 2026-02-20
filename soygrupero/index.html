@@ -21,7 +21,8 @@
     <header class="header">
         <div class="header-logo">
             <a href="./index.html">
-                <img src="./assets/img/logo-soy-grupero-lg.png" alt="Logo de Soy Grupero" class="header-logo__img" width="150" height="50">
+                <img src="./assets/img/logo-soy-grupero-lg.png" alt="Logo de Soy Grupero" class="header-logo__img"
+                    width="150" height="50">
             </a>
         </div>
         <nav class="header-nav">
@@ -56,74 +57,511 @@
                 <img src="./assets/img/hero-img.webp" alt="Imagen principal de hero" class="hero-item-img" width="1040"
                     height="328">
             </div>
-        </div>
-        <div class="hero-slider__arrows">
-            <button class="hero-slider__arrow hero-slider__arrow--prev" aria-label="Anterior">
-                <i class="bi bi-chevron-left"></i>
-            </button>
-            <button class="hero-slider__arrow hero-slider__arrow--next" aria-label="Siguiente">
-                <i class="bi bi-chevron-right"></i>
-            </button>
+            <div class="hero-slider__arrows">
+                <i class="bi bi-arrow-left-circle-fill hero-slider__arrow--prev"></i>
+                <i class="bi bi-arrow-right-circle-fill hero-slider__arrow--next"></i>
+            </div>
         </div>
     </section>
 
     <!-- Playlist #1 -->
-    <section class="featured-video">
-        <h2 class="featured-video__title">Video destacado</h2>
-        <div class="featured-video__layout">
-            <!-- Columna izquierda -->
-            <article class="featured-video__main">
-                <div class="featured-video__player">
-                    <!-- iframe o video -->
-                    <div class="video-placeholder">
-                        Soy Grupero
+    <main class="playlist-destacado">
+        <h2 class="destacado-title">Video Destacado</h2>
+        <div class="destacado__grid">
+
+            <div class="destacado__video">
+                <div class="destacado__bg"></div>
+                <div class="destacado-frame">
+                    <iframe src="https://geo.dailymotion.com/player.html?video=x9zcgxk" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <aside class="destacado__aside">
+                <h3 class="destacado-aside__title">Playlist #1</h3>
+                <!-- Ir llenando con Js -->
+                <div class="destacado-aside__item">
+                    <div class="destacado-aside__miniatura">
+                        <div class="destacado-aside__bg"></div>
+                        <img src="./assets/img/playlist-1/minuatura1.png" alt="miniatura 1"
+                            class="destacado-aside__img">
+                        <div class="destacado-aside__play">
+                            <i class="bi bi-play-fill destacado-aside__play-icon"></i>
+                        </div>
+                    </div>
+                    <span class="destacado-aside__text">Joaquín Coronel: El origen de los "guitarrazos" y la realidad de
+                        los corridos hoy</span>
+                </div>
+                <div class="destacado-aside__item">
+                    <div class="destacado-aside__miniatura">
+                        <div class="destacado-aside__bg"></div>
+                        <img src="./assets/img/playlist-1/minuatura1.png" alt="miniatura 1"
+                            class="destacado-aside__img">
+                        <div class="destacado-aside__play">
+                            <i class="bi bi-play-fill destacado-aside__play-icon"></i>
+                        </div>
+                    </div>
+                    <span class="destacado-aside__text">Joaquín Coronel: El origen de los "guitarrazos" y la realidad de
+                        los corridos hoy</span>
+                </div>
+                <div class="destacado-aside__item">
+                    <div class="destacado-aside__miniatura">
+                        <div class="destacado-aside__bg"></div>
+                        <img src="./assets/img/playlist-1/minuatura1.png" alt="miniatura 1"
+                            class="destacado-aside__img">
+                        <div class="destacado-aside__play">
+                            <i class="bi bi-play-fill destacado-aside__play-icon"></i>
+                        </div>
+                    </div>
+                    <span class="destacado-aside__text">Joaquín Coronel: El origen de los "guitarrazos" y la realidad de
+                        los corridos hoy</span>
+                </div>
+                <div class="destacado-aside__item">
+                    <div class="destacado-aside__miniatura">
+                        <div class="destacado-aside__bg"></div>
+                        <img src="./assets/img/playlist-1/minuatura1.png" alt="miniatura 1"
+                            class="destacado-aside__img">
+                        <div class="destacado-aside__play">
+                            <i class="bi bi-play-fill destacado-aside__play-icon"></i>
+                        </div>
+                    </div>
+                    <span class="destacado-aside__text">Joaquín Coronel: El origen de los "guitarrazos" y la realidad de
+                        los corridos hoy</span>
+                </div>
+                <div class="destacado-aside__item">
+                    <div class="destacado-aside__miniatura">
+                        <div class="destacado-aside__bg"></div>
+                        <img src="./assets/img/playlist-1/minuatura1.png" alt="miniatura 1"
+                            class="destacado-aside__img">
+                        <div class="destacado-aside__play">
+                            <i class="bi bi-play-fill destacado-aside__play-icon"></i>
+                        </div>
+                    </div>
+                    <span class="destacado-aside__text">Joaquín Coronel: El origen de los "guitarrazos" y la realidad de
+                        los corridos hoy</span>
+                </div>
+            </aside>
+
+            <div class="destacado__meta">
+                <div class="destacado-meta__header">
+                    <div class="destacado-meta__data">
+                        <span class="categoria">Categoría</span>
+                        <span class="emision">Hace 6 días</span>
+                    </div>
+                    <span class="compartir"><a href="#">Compartir <i class="bi bi-share-fill"></i></a></span>
+                </div>
+                <div class="destacado-meta__description">
+                    <p class="destacado-meta__text">Oscar Ortíz es la nueva promesa del regional mexicano. Con una
+                        versatilidad increíble, el joven artista logra fusionar diversos géneros con un exquisito toque
+                        romántico. Entre sus colaboraciones ya figuran nombres como Gabito Ballesteros y otros grandes
+                        del regional. En entrevista, nos cuenta todo lo relacinado a su carrera y al lanzamiento de su
+                        álbum debut "Silencio habla". Conócelo!
+                        #OscarOrtiz #SilencioHabla #RegionalMexicano #NuevaPromesa #SoyGrupero #MusicaMexicana
+                        #RomanticoRegional #GabitoBallesteros #TalentoEmergente</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="shorts max-width">
+        <div class="shorts-header">
+            <h2 class="shorts-title">Shorts</h2>
+            <span class="shorts-vermas"><a href="#">Ver más</a></span>
+        </div>
+        <div class="shorts-cont" id="shortsContainer">
+            <!-- <div class="shorts-item">
+                <div class="shorts-item__bg"></div>
+                <img src="./assets/img/shorts/miniatura1.webp" alt="Short 1" class="shorts-item__img">
+            </div>
+            <div class="shorts-item">
+                <div class="shorts-item__bg"></div>
+                <img src="./assets/img/shorts/miniatura2.webp" alt="Short 1" class="shorts-item__img">
+            </div>
+            <div class="shorts-item">
+                <div class="shorts-item__bg"></div>
+                <img src="./assets/img/shorts/miniatura3.webp" alt="Short 1" class="shorts-item__img">
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Seccion comercial leader-->
+    <section class="leader">
+        <img src="./assets/img/leader.png" alt="Leader" class="leader-img">
+    </section>
+
+    <!-- Playlist 2 -->
+    <section class="playlist-2 max-width">
+        <div class="playlist-2__header">
+            <h2 class="playlist-2__title">Playlist #2</h2>
+            <a href="#" class="playlist-2__vermas">Ver más</a>
+        </div>
+        <div class="playlist-2__grid">
+            <!-- CARD PRINCIPAL -->
+            <article class="playlist-2__main">
+                <a href="#" class="playlist-2__main-card-link">
+                    <div class="playlist-2__main-bg"></div>
+                    <div class="playlist-2__main-card-thumb">
+                        <img src="./assets/img/playlist-2/miniatura1.png" alt="Peso Pluma y Fuerza Regida">
+                        <div class="playlist-2__main-aside__play">
+                            <i class="bi bi-play-fill playlist-2__main-aside__play-icon"></i>
+                        </div>
+                    </div>
+                    <h3 class="playlist-2__main-card-title">
+                        Peso Pluma y Fuerza Regida regresan juntos a CDMX de la mano de este artista
+                    </h3>
+                </a>
+            </article>
+            <!-- CARDS SECUNDARIAS -->
+            <div class="playlist-2__side">
+                <article class="playlist-2__card">
+                    <a href="#" class="playlist-2__card-link">
+                        <div class="playlist-2__card-thumb">
+                            <div class="playlist-2__side-bg"></div>
+                            <img src="./assets/img/playlist-2/miniatura3.png" alt="">
+                            <div class="playlist-2__aside__play">
+                                <i class="bi bi-play-fill playlist-2__aside__play-icon"></i>
+                            </div>
+                        </div>
+                        <h4 class="playlist-2__card-title">
+                            Peso Pluma anuncia gira en 2026, ¿cuándo viene a México?
+                        </h4>
+                    </a>
+                </article>
+                <article class="playlist-2__card">
+                    <a href="#" class="playlist-2__card-link">
+                        <div class="playlist-2__card-thumb">
+                            <div class="playlist-2__side-bg"></div>
+                            <img src="./assets/img/playlist-2/miniatura4.png" alt="">
+                            <div class="playlist-2__aside__play">
+                                <i class="bi bi-play-fill playlist-2__aside__play-icon"></i>
+                            </div>
+                        </div>
+                        <h4 class="playlist-2__card-title">
+                            “putilegrante”, Peso Pluma y Tito Double P: Letra y significado
+                        </h4>
+                    </a>
+                </article>
+                <article class="playlist-2__card">
+                    <a href="#" class="playlist-2__card-link">
+                        <div class="playlist-2__card-thumb">
+                            <div class="playlist-2__side-bg"></div>
+                            <img src="./assets/img/playlist-2/miniatura2.png" alt="">
+                            <div class="playlist-2__aside__play">
+                                <i class="bi bi-play-fill playlist-2__aside__play-icon"></i>
+                            </div>
+                        </div>
+                        <h4 class="playlist-2__card-title">
+                            El regional mexicano conquista las pasarelas: artistas que han brillado en la Fashion Week
+                        </h4>
+                    </a>
+                </article>
+                <article class="playlist-2__card">
+                    <a href="#" class="playlist-2__card-link">
+                        <div class="playlist-2__card-thumb">
+                            <div class="playlist-2__side-bg"></div>
+                            <img src="./assets/img/playlist-2/miniatura5.png" alt="">
+                            <div class="playlist-2__aside__play">
+                                <i class="bi bi-play-fill playlist-2__aside__play-icon"></i>
+                            </div>
+                        </div>
+                        <h4 class="playlist-2__card-title">
+                            “bckpckbyz”, Peso Pluma y Tito Double P: Letra y significado
+                        </h4>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Playlist 3 -->
+    <section class="playlist-3 max-width">
+        <div class="playlist-3__header">
+            <h2 class="playlist-3__title">Playlist #3</h2>
+            <a href="#" class="playlist-3__vermas">Ver más</a>
+        </div>
+        <article class="playlist-3__main">
+            <a href="#" class="playlist-3__main-card-link">
+                <div class="playlist-3__main-bg"></div>
+                <div class="playlist-3__main-card-thumb">
+                    <img src="./assets/img/playlist-3/miniatura1.png" alt="Peso Pluma y Fuerza Regida">
+                    <div class="playlist-3__main-aside__play">
+                        <i class="bi bi-play-fill playlist-3__main-aside__play-icon"></i>
                     </div>
                 </div>
-                <div class="featured-video__info">
-                    <div class="featured-video__meta">
-                        <span class="tag">Música</span>
-                        <span class="date">Hace 6 días</span>
-                        <button class="share-btn" aria-label="Compartir">
-                            Compartir
-                        </button>
+                <h3 class="playlist-3__main-card-title">
+                    Peso Pluma y Fuerza Regida regresan juntos a CDMX de la mano de este artista
+                </h3>
+            </a>
+        </article>
+
+        <div class="playlist-3__cards">
+            <article class="playlist-3__card">
+                <a href="#" class="playlist-3__card-link">
+                    <div class="playlist-3__card-thumb">
+                        <div class="playlist-3__side-bg"></div>
+                        <img src="./assets/img/playlist-3/miniatura2.png" alt="">
                     </div>
-                    <p class="featured-video__description">
-                        Oscar Ortiz es la nueva promesa del regional mexicano...
-                    </p>
-                </div>
+                    <div class="playlist-3__card-meta">
+                        <h4 class="playlist-3__card-title">
+                            “bckpckbyz”, Peso Pluma y Tito Double P: Letra y significado
+                        </h4>
+                        <div class="playlist-3__aside__play">
+                            <i class="bi bi-play-fill playlist-3__aside__play-icon"></i>
+                        </div>
+                    </div>
+                </a>
             </article>
 
-            <!-- Columna derecha -->
-            <aside class="featured-video__playlist">
-                <h3 class="playlist__title">Playlist #1</h3>
-                <ul class="playlist__list">
-                    <li class="playlist__item">
-                        <div class="playlist__thumb"></div>
-                        <p class="playlist__text">
-                            Joaquín Coronel: El origen de los "guitarrazos"...
-                        </p>
-                    </li>
-                    <li class="playlist__item">
-                        <div class="playlist__thumb"></div>
-                        <p class="playlist__text">
-                            Navidad al estilo Duranguense...
-                        </p>
-                    </li>
-                    <li class="playlist__item">
-                        <div class="playlist__thumb"></div>
-                        <p class="playlist__text">
-                            EME MALAFE: Pleno en su carrera...
-                        </p>
-                    </li>
+            <article class="playlist-3__card">
+                <a href="#" class="playlist-3__card-link">
+                    <div class="playlist-3__card-thumb">
+                        <div class="playlist-3__side-bg"></div>
+                        <img src="./assets/img/playlist-3/miniatura3.png" alt="">
+                    </div>
+                    <div class="playlist-3__card-meta">
+                        <h4 class="playlist-3__card-title">
+                            “bckpckbyz”, Peso Pluma y Tito Double P: Letra y significado
+                        </h4>
+                        <div class="playlist-3__aside__play">
+                            <i class="bi bi-play-fill playlist-3__aside__play-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>
 
-                </ul>
+            <article class="playlist-3__card">
+                <a href="#" class="playlist-3__card-link">
+                    <div class="playlist-3__card-thumb">
+                        <div class="playlist-3__side-bg"></div>
+                        <img src="./assets/img/playlist-3/miniatura4.png" alt="">
+                    </div>
+                    <div class="playlist-3__card-meta">
+                        <h4 class="playlist-3__card-title">
+                            “bckpckbyz”, Peso Pluma y Tito Double P: Letra y significado
+                        </h4>
+                        <div class="playlist-3__aside__play">
+                            <i class="bi bi-play-fill playlist-3__aside__play-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>
 
-            </aside>
+            <article class="playlist-3__card">
+                <a href="#" class="playlist-3__card-link">
+                    <div class="playlist-3__card-thumb">
+                        <div class="playlist-3__side-bg"></div>
+                        <img src="./assets/img/playlist-3/miniatura5.png" alt="">
+                    </div>
+                    <div class="playlist-3__card-meta">
+                        <h4 class="playlist-3__card-title">
+                            “bckpckbyz”, Peso Pluma y Tito Double P: Letra y significado
+                        </h4>
+                        <div class="playlist-3__aside__play">
+                            <i class="bi bi-play-fill playlist-3__aside__play-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="playlist-3__card">
+                <a href="#" class="playlist-3__card-link">
+                    <div class="playlist-3__card-thumb">
+                        <div class="playlist-3__side-bg"></div>
+                        <img src="./assets/img/playlist-3/miniatura2.png" alt="">
+                    </div>
+                    <div class="playlist-3__card-meta">
+                        <h4 class="playlist-3__card-title">
+                            “bckpckbyz”, Peso Pluma y Tito Double P: Letra y significado
+                        </h4>
+                        <div class="playlist-3__aside__play">
+                            <i class="bi bi-play-fill playlist-3__aside__play-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="playlist-3__card">
+                <a href="#" class="playlist-3__card-link">
+                    <div class="playlist-3__card-thumb">
+                        <div class="playlist-3__side-bg"></div>
+                        <img src="./assets/img/playlist-3/miniatura3.png" alt="">
+                    </div>
+                    <div class="playlist-3__card-meta">
+                        <h4 class="playlist-3__card-title">
+                            “bckpckbyz”, Peso Pluma y Tito Double P: Letra y significado
+                        </h4>
+                        <div class="playlist-3__aside__play">
+                            <i class="bi bi-play-fill playlist-3__aside__play-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="playlist-3__card">
+                <a href="#" class="playlist-3__card-link">
+                    <div class="playlist-3__card-thumb">
+                        <div class="playlist-3__side-bg"></div>
+                        <img src="./assets/img/playlist-3/miniatura4.png" alt="">
+                    </div>
+                    <div class="playlist-3__card-meta">
+                        <h4 class="playlist-3__card-title">
+                            “bckpckbyz”, Peso Pluma y Tito Double P: Letra y significado
+                        </h4>
+                        <div class="playlist-3__aside__play">
+                            <i class="bi bi-play-fill playlist-3__aside__play-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="playlist-3__card">
+                <a href="#" class="playlist-3__card-link">
+                    <div class="playlist-3__card-thumb">
+                        <div class="playlist-3__side-bg"></div>
+                        <img src="./assets/img/playlist-3/miniatura5.png" alt="">
+                    </div>
+                    <div class="playlist-3__card-meta">
+                        <h4 class="playlist-3__card-title">
+                            “bckpckbyz”, Peso Pluma y Tito Double P: Letra y significado
+                        </h4>
+                        <div class="playlist-3__aside__play">
+                            <i class="bi bi-play-fill playlist-3__aside__play-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+    <!-- Playlist 4 -->
+    <section class="player max-width">
+    <div class="player__layout">
+        <!-- LEFT COLUMN -->
+        <div class="player__main">
+            <div class="player__header">
+                <h2 class="player__title">
+                    Natanael Cano y Peso Pluma están conectados todos
+                </h2>
+
+                <div class="player__meta">
+                    <span class="player__badge">Entrevista</span>
+                    <span class="player__date">Hace 3 meses</span>
+                </div>
+            </div>
+
+            <div class="player__media-wrapper">
+                <iframe
+                    id="player-frame"
+                    src="https://www.dailymotion.com/embed/video/x8m3q1u"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen>
+                </iframe>
+            </div>
 
         </div>
 
-    </section>
+        <!-- RIGHT COLUMN -->
+        <div class="player__playlist">
 
+            <div class="player__items">
+
+                <!-- ITEM 1 -->
+                <div class="player__item active"
+                     data-video="xa074tu"
+                     data-title="Armando Ramos se pone 'Al Tiro'; su nueva etapa como solista"
+                     data-date="Hace 3 meses"
+                     data-badge="Entrevista">
+
+                    <div class="player__play">
+                        <i class="bi bi-play-fill"></i>
+                    </div>
+
+                    <div class="player__info">
+                        <div class="player__info-top">
+                            <span class="player__info-badge">Entrevista</span>
+                            <span class="player__info-date">Hace 3 años</span>
+                        </div>
+                        <div class="player__info-title">
+                            Los Invasores de Nuevo León revelan detalles de su primera gira por Europa | Entrevista exclusiva
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 2 -->
+                <div class="player__item"
+                     data-video="x9w7y02"
+                     data-title="Joaquín Coronel: El origen de los 'guitarrazos'"
+                     data-date="Hace 7 semanas"
+                     data-badge="Entrevista">
+
+                    <div class="player__play">
+                        <i class="bi bi-play-fill"></i>
+                    </div>
+
+                    <div class="player__info">
+                        <div class="player__info-top">
+                            <span class="player__info-badge">Entrevista</span>
+                            <span class="player__info-date">Hace 7 semanas</span>
+                        </div>
+                        <div class="player__info-title">
+                            Joaquín Coronel: El origen de los "guitarrazos" y la realidad de los corridos hoy | Soy Grupero
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 3 -->
+                <div class="player__item"
+                     data-video="x9uzvvg"
+                     data-title="¡Navidad al estilo Duranguense!"
+                     data-date="Hace 7 semanas"
+                     data-badge="Entrevista">
+
+                    <div class="player__play">
+                        <i class="bi bi-play-fill"></i>
+                    </div>
+
+                    <div class="player__info">
+                        <div class="player__info-top">
+                            <span class="player__info-badge">Entrevista</span>
+                            <span class="player__info-date">Hace 7 semanas</span>
+                        </div>
+                        <div class="player__info-title">
+                            EME MALAFE: Pleno en su Carrera, Anuncio del Auditorio BB y el Significado de "La Capital" | Entrevista Exclusiva Soy Grupero
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 5 -->
+                <div class="player__item"
+                     data-video="x9t04fm"
+                     data-title="Nuevas promesas del regional mexicano"
+                     data-date="Hace 1 mes"
+                     data-badge="Entrevista">
+
+                    <div class="player__play">
+                        <i class="bi bi-play-fill"></i>
+                    </div>
+
+                    <div class="player__info">
+                        <div class="player__info-top">
+                            <span class="player__info-badge">Entrevista</span>
+                            <span class="player__info-date">Hace 1 mes</span>
+                        </div>
+                        <div class="player__info-title">
+                            Brincos Dieras celebra 30 años de carrera | Soy Grupero
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="player__more">
+                Más videos
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <script src="./assets/js/main.js" defer></script>
 </body>
 
 </html>
