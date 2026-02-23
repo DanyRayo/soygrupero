@@ -614,6 +614,7 @@ body {
     font-size: clamp(1.3rem, 1vw, 1.5rem);
     cursor: pointer;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .compartir:hover {
@@ -623,6 +624,7 @@ body {
 #btnCompartir {
     border: none;
     background: transparent;
+    cursor: pointer;
 }
 
 .compartir i {
@@ -631,6 +633,83 @@ body {
 
 .destacado-meta__text {
     font-size: clamp(1.3rem, 1vw, 1.8rem);
+}
+
+/* ----------Modal compartir---------- */
+.share-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.share-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.share-modal__content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    color: #333;
+}
+
+.share-modal__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.share-modal__buttons {
+    display: grid;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+#closeShare{
+    background: transparent;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#closeShare:hover {
+    color: var(--rojo);
+}
+
+.share-btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wa {
+    background-color: #25D366;
+}
+
+.fb {
+    background-color: #1877F2;
+}
+
+.copy {
+    background-color: #6c757d;
 }
 
 /* --------- Sección Shorts --------- */
@@ -732,7 +811,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    background: rgba(0,0,0,.35);
+    background: rgba(0, 0, 0, .35);
     color: white;
     border: none;
     cursor: pointer;
@@ -749,6 +828,7 @@ body {
     border: none;
     cursor: pointer;
 }
+
 /* -----------Leader-------- */
 .leader {
     max-width: 728px;

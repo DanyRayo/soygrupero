@@ -29,7 +29,7 @@ menuItems.forEach(item => {
 });
 
 /* Click fuera del contenido (overlay) */
-overlay.addEventListener("click", function(e) {
+overlay.addEventListener("click", function (e) {
     if (e.target === overlay) {
         closeMenu();
     }
@@ -93,73 +93,108 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /*-------------------compartir---------------------------*/
-const btnCompartir = document.getElementById("btnCompartir");
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Referencias a los elementos del DOM
+    const btnCompartir = document.getElementById('btnCompartir');
+    const shareModal = document.getElementById('shareModal');
+    const closeShare = document.getElementById('closeShare');
+    const btnCopyLink = document.getElementById('copyLink');
+    const btnShareWA = document.getElementById('shareWA');
+    const btnShareFB = document.getElementById('shareFB');
 
-function fallbackCopy(texto) {
-    const textarea = document.createElement("textarea");
-    textarea.value = texto;
-    textarea.style.position = "fixed";
-    textarea.style.left = "-9999px";
-    document.body.appendChild(textarea);
-    textarea.focus();
-    textarea.select();
-
-    try {
-        const successful = document.execCommand("copy");
-        if (successful) {
-            alert("Enlace copiado al portapapeles");
-        } else {
-            alert("No se pudo copiar el enlace");
-        }
-    } catch (err) {
-        alert("No se pudo copiar el enlace");
-    }
-
-    document.body.removeChild(textarea);
-}
-
-btnCompartir.addEventListener("click", async () => {
-
-    const videoIframe = document.querySelector(".destacado-frame iframe");
-    const videoURL = videoIframe ? videoIframe.src : window.location.href;
-
-    const shareData = {
-        title: "Video Destacado",
-        text: "Mira este video destacado:",
-        url: videoURL
+    // 2. Datos del video (puedes hacer que estos sean dinámicos después)
+    const videoData = {
+        title: "Oscar Ortíz: La nueva promesa del regional mexicano",
+        url: "https://www.dailymotion.com/video/x9zcgxk",
+        text: "Mira esta entrevista exclusiva en Soy Grupero: "
     };
 
-    // 1️⃣ Intentar Web Share (móviles modernos)
-    if (navigator.share) {
-        try {
-            await navigator.share(shareData);
-            return;
-        } catch (err) {
-            console.log("Share cancelado o error:", err);
+    // 3. Función para abrir el compartidor
+    const abrirCompartir = async () => {
+        // Si el navegador soporta el menú nativo Y estamos en HTTPS
+        if (navigator.share && location.protocol === 'https:') {
+            try {
+                await navigator.share({
+                    title: videoData.title,
+                    text: videoData.text,
+                    url: videoData.url
+                });
+            } catch (err) {
+                console.log("Compartir nativo cancelado o fallido");
+            }
+        } else {
+            // Si estamos en desarrollo (HTTP) o no hay soporte nativo, abrimos tu modal
+            mostrarModal();
         }
+    };
+
+    // 4. Lógica del Modal Personalizado
+    function mostrarModal() {
+        // Configurar los enlaces de redes sociales antes de mostrar
+        const encodedText = encodeURIComponent(videoData.text + " " + videoData.url);
+        const encodedURL = encodeURIComponent(videoData.url);
+
+        btnShareWA.href = `https://api.whatsapp.com/send?text=${encodedText}`;
+        // Cambia la línea de FB por esta:
+        btnShareFB.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(videoData.url)}`;
+
+        // Mostrar el modal
+        shareModal.classList.add('active');
     }
 
-    // 2️⃣ Intentar Clipboard moderno
-    if (navigator.clipboard && window.isSecureContext) {
-        try {
-            await navigator.clipboard.writeText(videoURL);
-            alert("Enlace copiado al portapapeles");
-            return;
-        } catch (err) {
-            console.log("Clipboard falló, usando fallback");
-        }
+    function cerrarModal() {
+        shareModal.classList.remove('active');
     }
 
-    // 3️⃣ Fallback para iPhone viejo
-    fallbackCopy(videoURL);
+    // 5. Lógica del botón "Copiar Enlace"
+    btnCopyLink.onclick = function () {
+        navigator.clipboard.writeText(videoData.url).then(() => {
+            // Guardamos el contenido original para restaurarlo luego
+            const originalHTML = this.innerHTML;
 
+            // Feedback visual: cambia texto y color
+            this.innerHTML = '<i class="bi bi-check-lg"></i> ¡Enlace copiado!';
+            this.style.backgroundColor = "#28a745"; // Verde éxito
+
+            // Esperamos 1 segundo para que el usuario lo vea
+            setTimeout(() => {
+                cerrarModal();
+
+                // Restauramos el botón después de que el modal se oculte
+                setTimeout(() => {
+                    this.innerHTML = originalHTML;
+                    this.style.backgroundColor = "";
+                }, 400);
+            }, 1000);
+
+        }).catch(err => {
+            // Plan B si el navegador bloquea el copiado (común en HTTP)
+            alert("Copia este enlace: " + videoData.url);
+            cerrarModal();
+        });
+    };
+
+    // 6. Eventos de clic
+    btnCompartir.addEventListener('click', (e) => {
+        e.preventDefault();
+        abrirCompartir();
+    });
+
+    closeShare.addEventListener('click', cerrarModal);
+
+    // Cerrar si hace clic fuera del contenido blanco (en el fondo oscuro)
+    window.addEventListener('click', (e) => {
+        if (e.target === shareModal) {
+            cerrarModal();
+        }
+    });
 });
+
 /*-------------------Shorts preview (Dailymotion)-------------------*/
 console.log("SHORTS HOVER PREVIEW ACTIVO");
 
 /* ---------- CONFIGURACIÓN ---------- */
-const shorts = [
-    {
+const shorts = [{
         id: "x9uzzy0",
         thumb: "./assets/img/shorts/dailymotion-short-1.webp"
     },
@@ -177,7 +212,10 @@ const container = document.getElementById("shortsContainer");
 
 if (container) {
 
-    shorts.forEach(({ id, thumb }) => {
+    shorts.forEach(({
+        id,
+        thumb
+    }) => {
 
         const item = document.createElement("div");
         item.className = "shorts-item";
@@ -321,7 +359,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     backTopBtn.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     });
 });
 

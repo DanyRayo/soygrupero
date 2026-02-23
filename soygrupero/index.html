@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,21 +101,19 @@
                     <img src="./assets/img/hero-img.webp" alt="Imagen principal de hero" class="hero-item-img"
                         width="1040" height="328">
                     <img src="./assets/img/imagen-hero-mobile.webp" alt="Imagen principal de hero"
-                        class="hero-item-img__mobile" width="1040" height="328">
+                        class="hero-item-img__mobile" width="350" height="190">
                 </div>
                 <div class="hero-slider__item">
                     <img src="./assets/img/hero-img.webp" alt="Imagen principal de hero" class="hero-item-img"
                         width="1040" height="328">
                     <img src="./assets/img/imagen-hero-mobile.webp" alt="Imagen principal de hero"
-                        class="hero-item-img__mobile" width="1040" height="328">
-                    <img src="./assets/img/imagen-hero-mobile.webp" alt="Imagen principal de hero"
-                        class="hero-item-img__mobile" width="1040" height="328">
+                        class="hero-item-img__mobile" width="350" height="190">
                 </div>
                 <div class="hero-slider__item">
                     <img src="./assets/img/hero-img.webp" alt="Imagen principal de hero" class="hero-item-img"
                         width="1040" height="328">
                     <img src="./assets/img/imagen-hero-mobile.webp" alt="Imagen principal de hero"
-                        class="hero-item-img__mobile" width="1040" height="328">
+                        class="hero-item-img__mobile" width="350" height="190">
                 </div>
             </div>
             <div class="hero-slider__arrows">
@@ -231,6 +230,20 @@
             </div>
         </div>
     </main>
+    <!-- Modal compartir -->
+    <div id="shareModal" class="share-modal">
+        <div class="share-modal__content">
+            <div class="share-modal__header">
+                <h4>Compartir Video</h4>
+                <button id="closeShare">&times;</button>
+            </div>
+            <div class="share-modal__buttons">
+                <a href="#" id="shareWA" class="share-btn wa"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                <a href="#" id="shareFB" class="share-btn fb"><i class="bi bi-facebook"></i> Facebook</a>
+                <button id="copyLink" class="share-btn copy"><i class="bi bi-link-45deg"></i> Copiar Link</button>
+            </div>
+        </div>
+    </div>
     <!-- shorts -->
     <section class="shorts max-width" id="shorts">
         <div class="shorts-header">
@@ -519,8 +532,8 @@
                 <div class="player__items">
 
                     <!-- ITEM 1 -->
-                    <div class="player__item active" data-video="xa074tu"
-                        data-title="Los Invasores de Nuevo León revelan detalles de su primera gira por Europa | Entrevista exclusiva"
+                    <div class="player__item active" data-video="x8m3q1u"
+                        data-title="Natanael Cano y Peso Pluma están conectados todos"
                         data-date="Hace 3 meses" data-badge="Entrevista">
 
                         <div class="player__play">
@@ -530,11 +543,10 @@
                         <div class="player__info">
                             <div class="player__info-top">
                                 <span class="player__info-badge">Entrevista</span>
-                                <span class="player__info-date">Hace 3 años</span>
+                                <span class="player__info-date">Hace 3 meses</span>
                             </div>
                             <div class="player__info-title">
-                                Los Invasores de Nuevo León revelan detalles de su primera gira por Europa | Entrevista
-                                exclusiva
+                                Natanael Cano y Peso Pluma están conectados todos
                             </div>
                         </div>
                     </div>
@@ -740,7 +752,7 @@
         <i class="bi bi-chevron-up"></i>
     </button>
 
-    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/main.js?ver=1.0" defer></script>
 </body>
 
 </html>
