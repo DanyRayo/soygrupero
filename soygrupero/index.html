@@ -13,28 +13,47 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!-- Estilos -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Estilos Modo oscuro -->
+    <!-- <link rel="stylesheet" href="./assets/css/dark-mode.css"> -->
     <title>Soy Grupero | Inicio</title>
 </head>
 
 <body>
+    <!-- Botón de modo oscuro -->
+    <div class="switcher">
+        <button class="switcher__btn">
+            <span class="switcher__icon-light">
+                <i class="bi bi-moon-fill switcher__icon"></i>
+            </span>
+            <span class="switcher__icon-dark">
+                <i class="bi bi-lightbulb-fill switcher__icon"></i>
+            </span>
+        </button>
+    </div>
     <!-- Header -->
     <header class="header">
         <div class="header-logo">
             <a href="./index.html">
-                <img src="./assets/img/logo-soy-grupero-lg.png" alt="Logo de Soy Grupero" class="header-logo__img"
-                    width="150" height="50">
+                <img src="./assets/img/logo-soy-grupero-lg.png" alt="Logo de Soy Grupero"
+                    class="header-logo__img logo-desktop" width="150" height="50">
+                <img src="./assets/img/Logo-soy-grupero-small.png" alt="Logo de Soy Grupero"
+                    class="header-logo__img logo-mobile" width="50" height="50">
             </a>
+        </div>
+        <div class="header-toggle" id="menu-toggle">
+            <i class="bi bi-list"></i>
         </div>
         <nav class="header-nav">
             <ul class="header-nav__list">
                 <li><a href="#playlist1" class="header-list__item">Playlist #1</a></li>
+                <li><a href="#shorts" class="header-list__item">Shorts</a></li>
                 <li><a href="#playlist2" class="header-list__item">Playlist #2</a></li>
                 <li><a href="#playlist3" class="header-list__item">Playlist #3</a></li>
                 <li><a href="#playlist4" class="header-list__item">Playlist #4</a></li>
             </ul>
         </nav>
         <div class="header-redes">
-            <a href="https://www.tiktok.com/soygrupero" target="_blank">
+            <a href="https://www.tiktok.com/@soygrupero" target="_blank">
                 <i class="bi bi-tiktok header-icon"></i>
             </a>
             <a href="https://www.facebook.com/soygrupero" target="_blank">
@@ -45,17 +64,52 @@
             </a>
         </div>
     </header>
+    <!-- Submenú mobile -->
+    <div class="header-overlay" id="mobile-menu">
+        <div class="header-overlay__top">
+            <img src="./assets/img/Logo-soy-grupero-small.png" alt="Logo Soy Grupero" class="overlay-logo">
+            <div class="header-overlay__close" id="menu-close">
+                <i class="bi bi-x-circle-fill"></i>
+            </div>
+        </div>
 
+        <ul class="header-overlay__menu">
+            <li><a href="#playlist1">Playlist #1</a></li>
+            <li><a href="#shorts">Shorts</a></li>
+            <li><a href="#playlist2">Playlist #2</a></li>
+            <li><a href="#playlist3">Playlist #3</a></li>
+            <li><a href="#playlist4">Playlist #4</a></li>
+        </ul>
+
+        <div class="header-overlay__social">
+            <p>¡Síguenos en nuestras redes sociales!</p>
+
+            <div class="overlay-icons">
+                <a href="https://www.tiktok.com/@soygrupero" target="_blank"><i class="bi bi-tiktok"></i></a>
+                <a href="https://www.instagram.com/soygrupero" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/soygrupero" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Fin header -->
     <!-- Hero -->
     <section class="hero">
         <div class="hero-slider">
-            <div class="hero-slider__item">
-                <img src="./assets/img/hero-img.webp" alt="Imagen principal de hero" class="hero-item-img" width="1040"
-                    height="328">
-            </div>
-            <div class="hero-slider__item">
-                <img src="./assets/img/hero-img.webp" alt="Imagen principal de hero" class="hero-item-img" width="1040"
-                    height="328">
+            <div class="hero-slider__track">
+                <div class="hero-slider__item">
+                    <img src="./assets/img/hero-img.webp" alt="Imagen principal de hero" class="hero-item-img" width="1040" height="328">
+                    <img src="./assets/img/imagen-hero-mobile.webp" alt="Imagen principal de hero" class="hero-item-img__mobile" width="1040" height="328">
+                </div>
+                <div class="hero-slider__item">
+                    <img src="./assets/img/hero-img.webp" alt="Imagen principal de hero" class="hero-item-img"
+                        width="1040" height="328">
+                    <img src="./assets/img/imagen-hero-mobile.webp" alt="Imagen principal de hero" class="hero-item-img__mobile" width="1040" height="328">
+                </div>
+                <div class="hero-slider__item">
+                    <img src="./assets/img/hero-img.webp" alt="Imagen principal de hero" class="hero-item-img"
+                        width="1040" height="328">
+                    <img src="./assets/img/imagen-hero-mobile.webp" alt="Imagen principal de hero" class="hero-item-img__mobile" width="1040" height="328">
+                </div>
             </div>
             <div class="hero-slider__arrows">
                 <i class="bi bi-arrow-left-circle-fill hero-slider__arrow--prev"></i>
@@ -68,7 +122,6 @@
     <main class="playlist-destacado">
         <h2 class="destacado-title">Video Destacado</h2>
         <div class="destacado__grid">
-
             <div class="destacado__video">
                 <div class="destacado__bg"></div>
                 <div class="destacado-frame">
@@ -76,10 +129,10 @@
                 </div>
             </div>
 
-            <aside class="destacado__aside">
+            <aside class="destacado__aside" id="playlist1">
                 <h3 class="destacado-aside__title">Playlist #1</h3>
                 <!-- Ir llenando con Js -->
-                <div class="destacado-aside__item">
+                <a href="https://www.dailymotion.com/video/x9w7y02" target="_blank" class="destacado-aside__item">
                     <div class="destacado-aside__miniatura">
                         <div class="destacado-aside__bg"></div>
                         <img src="./assets/img/playlist-1/minuatura1.png" alt="miniatura 1"
@@ -90,8 +143,8 @@
                     </div>
                     <span class="destacado-aside__text">Joaquín Coronel: El origen de los "guitarrazos" y la realidad de
                         los corridos hoy</span>
-                </div>
-                <div class="destacado-aside__item">
+                </a>
+                <a href="https://www.dailymotion.com/video/x9w7y02" target="_blank" class="destacado-aside__item">
                     <div class="destacado-aside__miniatura">
                         <div class="destacado-aside__bg"></div>
                         <img src="./assets/img/playlist-1/minuatura1.png" alt="miniatura 1"
@@ -102,8 +155,8 @@
                     </div>
                     <span class="destacado-aside__text">Joaquín Coronel: El origen de los "guitarrazos" y la realidad de
                         los corridos hoy</span>
-                </div>
-                <div class="destacado-aside__item">
+                </a>
+                <a href="https://www.dailymotion.com/video/x9w7y02" target="_blank" class="destacado-aside__item">
                     <div class="destacado-aside__miniatura">
                         <div class="destacado-aside__bg"></div>
                         <img src="./assets/img/playlist-1/minuatura1.png" alt="miniatura 1"
@@ -114,8 +167,8 @@
                     </div>
                     <span class="destacado-aside__text">Joaquín Coronel: El origen de los "guitarrazos" y la realidad de
                         los corridos hoy</span>
-                </div>
-                <div class="destacado-aside__item">
+                </a>
+                <a href="https://www.dailymotion.com/video/x9w7y02" target="_blank" class="destacado-aside__item">
                     <div class="destacado-aside__miniatura">
                         <div class="destacado-aside__bg"></div>
                         <img src="./assets/img/playlist-1/minuatura1.png" alt="miniatura 1"
@@ -126,8 +179,8 @@
                     </div>
                     <span class="destacado-aside__text">Joaquín Coronel: El origen de los "guitarrazos" y la realidad de
                         los corridos hoy</span>
-                </div>
-                <div class="destacado-aside__item">
+                </a>
+                <a href="https://www.dailymotion.com/video/x9w7y02" target="_blank" class="destacado-aside__item">
                     <div class="destacado-aside__miniatura">
                         <div class="destacado-aside__bg"></div>
                         <img src="./assets/img/playlist-1/minuatura1.png" alt="miniatura 1"
@@ -138,7 +191,10 @@
                     </div>
                     <span class="destacado-aside__text">Joaquín Coronel: El origen de los "guitarrazos" y la realidad de
                         los corridos hoy</span>
-                </div>
+                </a>
+                <button class="destacado-aside__more">
+                    Ver más
+                </button>
             </aside>
 
             <div class="destacado__meta">
@@ -147,7 +203,11 @@
                         <span class="categoria">Categoría</span>
                         <span class="emision">Hace 6 días</span>
                     </div>
-                    <span class="compartir"><a href="#">Compartir <i class="bi bi-share-fill"></i></a></span>
+                    <span class="compartir">
+                        <button id="btnCompartir">
+                            Compartir <i class="bi bi-share-fill"></i>
+                        </button>
+                    </span>
                 </div>
                 <div class="destacado-meta__description">
                     <p class="destacado-meta__text">Oscar Ortíz es la nueva promesa del regional mexicano. Con una
@@ -157,28 +217,21 @@
                         álbum debut "Silencio habla". Conócelo!
                         #OscarOrtiz #SilencioHabla #RegionalMexicano #NuevaPromesa #SoyGrupero #MusicaMexicana
                         #RomanticoRegional #GabitoBallesteros #TalentoEmergente</p>
+                    <button class="destacado-meta__toggle">
+                        <span class="toggle-text">Ver descripción</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </main>
-    <section class="shorts max-width">
+    <!-- shorts -->
+    <section class="shorts max-width" id="shorts">
         <div class="shorts-header">
             <h2 class="shorts-title">Shorts</h2>
-            <span class="shorts-vermas"><a href="#">Ver más</a></span>
+            <a href="#" class="shorts-vermas">Ver más</a>
         </div>
         <div class="shorts-cont" id="shortsContainer">
-            <!-- <div class="shorts-item">
-                <div class="shorts-item__bg"></div>
-                <img src="./assets/img/shorts/miniatura1.webp" alt="Short 1" class="shorts-item__img">
-            </div>
-            <div class="shorts-item">
-                <div class="shorts-item__bg"></div>
-                <img src="./assets/img/shorts/miniatura2.webp" alt="Short 1" class="shorts-item__img">
-            </div>
-            <div class="shorts-item">
-                <div class="shorts-item__bg"></div>
-                <img src="./assets/img/shorts/miniatura3.webp" alt="Short 1" class="shorts-item__img">
-            </div> -->
         </div>
     </section>
 
@@ -188,7 +241,7 @@
     </section>
 
     <!-- Playlist 2 -->
-    <section class="playlist-2 max-width">
+    <section class="playlist-2 max-width" id="playlist2">
         <div class="playlist-2__header">
             <h2 class="playlist-2__title">Playlist #2</h2>
             <a href="#" class="playlist-2__vermas">Ver más</a>
@@ -197,8 +250,8 @@
             <!-- CARD PRINCIPAL -->
             <article class="playlist-2__main">
                 <a href="#" class="playlist-2__main-card-link">
-                    <div class="playlist-2__main-bg"></div>
                     <div class="playlist-2__main-card-thumb">
+                        <div class="playlist-2__main-bg"></div>
                         <img src="./assets/img/playlist-2/miniatura1.png" alt="Peso Pluma y Fuerza Regida">
                         <div class="playlist-2__main-aside__play">
                             <i class="bi bi-play-fill playlist-2__main-aside__play-icon"></i>
@@ -271,15 +324,15 @@
         </div>
     </section>
     <!-- Playlist 3 -->
-    <section class="playlist-3 max-width">
+    <section class="playlist-3 max-width" id="playlist3">
         <div class="playlist-3__header">
             <h2 class="playlist-3__title">Playlist #3</h2>
             <a href="#" class="playlist-3__vermas">Ver más</a>
         </div>
         <article class="playlist-3__main">
             <a href="#" class="playlist-3__main-card-link">
-                <div class="playlist-3__main-bg"></div>
                 <div class="playlist-3__main-card-thumb">
+                    <div class="playlist-3__main-bg"></div>
                     <img src="./assets/img/playlist-3/miniatura1.png" alt="Peso Pluma y Fuerza Regida">
                     <div class="playlist-3__main-aside__play">
                         <i class="bi bi-play-fill playlist-3__main-aside__play-icon"></i>
@@ -430,136 +483,256 @@
         </div>
     </section>
     <!-- Playlist 4 -->
-    <section class="player max-width">
-    <div class="player__layout">
-        <!-- LEFT COLUMN -->
-        <div class="player__main">
-            <div class="player__header">
-                <h2 class="player__title">
-                    Natanael Cano y Peso Pluma están conectados todos
-                </h2>
+    <section class="player max-width" id="playlist4">
+        <div class="player__layout">
+            <!-- LEFT COLUMN -->
+            <div class="player__main">
+                <div class="player__header">
+                    <h2 class="player__title">
+                        Natanael Cano y Peso Pluma están conectados todos
+                    </h2>
 
-                <div class="player__meta">
-                    <span class="player__badge">Entrevista</span>
-                    <span class="player__date">Hace 3 meses</span>
+                    <div class="player__meta">
+                        <span class="player__badge">Entrevista</span>
+                        <span class="player__date">Hace 3 meses</span>
+                    </div>
                 </div>
+
+                <div class="player__media-wrapper">
+                    <div class="player__bg"></div>
+                    <iframe id="player-frame" src="https://www.dailymotion.com/embed/video/x8m3q1u"
+                        allow="autoplay; fullscreen" allowfullscreen>
+                    </iframe>
+                </div>
+
             </div>
 
-            <div class="player__media-wrapper">
-                <iframe
-                    id="player-frame"
-                    src="https://www.dailymotion.com/embed/video/x8m3q1u"
-                    allow="autoplay; fullscreen"
-                    allowfullscreen>
-                </iframe>
-            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="player__playlist">
 
+                <div class="player__items">
+
+                    <!-- ITEM 1 -->
+                    <div class="player__item active" data-video="xa074tu"
+                        data-title="Los Invasores de Nuevo León revelan detalles de su primera gira por Europa | Entrevista exclusiva"
+                        data-date="Hace 3 meses" data-badge="Entrevista">
+
+                        <div class="player__play">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+
+                        <div class="player__info">
+                            <div class="player__info-top">
+                                <span class="player__info-badge">Entrevista</span>
+                                <span class="player__info-date">Hace 3 años</span>
+                            </div>
+                            <div class="player__info-title">
+                                Los Invasores de Nuevo León revelan detalles de su primera gira por Europa | Entrevista
+                                exclusiva
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 2 -->
+                    <div class="player__item" data-video="x9w7y02"
+                        data-title="Joaquín Coronel: El origen de los 'guitarrazos' y la realidad de los corridos hoy | Soy Grupero"
+                        data-date="Hace 7 semanas" data-badge="Entrevista">
+
+                        <div class="player__play">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+
+                        <div class="player__info">
+                            <div class="player__info-top">
+                                <span class="player__info-badge">Entrevista</span>
+                                <span class="player__info-date">Hace 7 semanas</span>
+                            </div>
+                            <div class="player__info-title">
+                                Joaquín Coronel: El origen de los "guitarrazos" y la realidad de los corridos hoy | Soy
+                                Grupero
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 3 -->
+                    <div class="player__item" data-video="x9uzvvg"
+                        data-title="EME MALAFE: Pleno en su Carrera, Anuncio del Auditorio BB y el Significado de 'La Capital' | Entrevista Exclusiva Soy Grupero"
+                        data-date="Hace 7 semanas" data-badge="Entrevista">
+
+                        <div class="player__play">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+
+                        <div class="player__info">
+                            <div class="player__info-top">
+                                <span class="player__info-badge">Entrevista</span>
+                                <span class="player__info-date">Hace 7 semanas</span>
+                            </div>
+                            <div class="player__info-title">
+                                EME MALAFE: Pleno en su Carrera, Anuncio del Auditorio BB y el Significado de "La
+                                Capital" | Entrevista Exclusiva Soy Grupero
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITEM 5 -->
+                    <div class="player__item" data-video="x9t04fm"
+                        data-title="Brincos Dieras celebra 30 años de carrera | Soy Grupero" data-date="Hace 1 mes"
+                        data-badge="Entrevista">
+
+                        <div class="player__play">
+                            <i class="bi bi-play-fill"></i>
+                        </div>
+
+                        <div class="player__info">
+                            <div class="player__info-top">
+                                <span class="player__info-badge">Entrevista</span>
+                                <span class="player__info-date">Hace 1 mes</span>
+                            </div>
+                            <div class="player__info-title">
+                                Brincos Dieras celebra 30 años de carrera | Soy Grupero
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="player__more">
+                    Más videos
+                </button>
+            </div>
         </div>
-
-        <!-- RIGHT COLUMN -->
-        <div class="player__playlist">
-
-            <div class="player__items">
-
-                <!-- ITEM 1 -->
-                <div class="player__item active"
-                     data-video="xa074tu"
-                     data-title="Armando Ramos se pone 'Al Tiro'; su nueva etapa como solista"
-                     data-date="Hace 3 meses"
-                     data-badge="Entrevista">
-
-                    <div class="player__play">
-                        <i class="bi bi-play-fill"></i>
-                    </div>
-
-                    <div class="player__info">
-                        <div class="player__info-top">
-                            <span class="player__info-badge">Entrevista</span>
-                            <span class="player__info-date">Hace 3 años</span>
-                        </div>
-                        <div class="player__info-title">
-                            Los Invasores de Nuevo León revelan detalles de su primera gira por Europa | Entrevista exclusiva
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ITEM 2 -->
-                <div class="player__item"
-                     data-video="x9w7y02"
-                     data-title="Joaquín Coronel: El origen de los 'guitarrazos'"
-                     data-date="Hace 7 semanas"
-                     data-badge="Entrevista">
-
-                    <div class="player__play">
-                        <i class="bi bi-play-fill"></i>
-                    </div>
-
-                    <div class="player__info">
-                        <div class="player__info-top">
-                            <span class="player__info-badge">Entrevista</span>
-                            <span class="player__info-date">Hace 7 semanas</span>
-                        </div>
-                        <div class="player__info-title">
-                            Joaquín Coronel: El origen de los "guitarrazos" y la realidad de los corridos hoy | Soy Grupero
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ITEM 3 -->
-                <div class="player__item"
-                     data-video="x9uzvvg"
-                     data-title="¡Navidad al estilo Duranguense!"
-                     data-date="Hace 7 semanas"
-                     data-badge="Entrevista">
-
-                    <div class="player__play">
-                        <i class="bi bi-play-fill"></i>
-                    </div>
-
-                    <div class="player__info">
-                        <div class="player__info-top">
-                            <span class="player__info-badge">Entrevista</span>
-                            <span class="player__info-date">Hace 7 semanas</span>
-                        </div>
-                        <div class="player__info-title">
-                            EME MALAFE: Pleno en su Carrera, Anuncio del Auditorio BB y el Significado de "La Capital" | Entrevista Exclusiva Soy Grupero
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ITEM 5 -->
-                <div class="player__item"
-                     data-video="x9t04fm"
-                     data-title="Nuevas promesas del regional mexicano"
-                     data-date="Hace 1 mes"
-                     data-badge="Entrevista">
-
-                    <div class="player__play">
-                        <i class="bi bi-play-fill"></i>
-                    </div>
-
-                    <div class="player__info">
-                        <div class="player__info-top">
-                            <span class="player__info-badge">Entrevista</span>
-                            <span class="player__info-date">Hace 1 mes</span>
-                        </div>
-                        <div class="player__info-title">
-                            Brincos Dieras celebra 30 años de carrera | Soy Grupero
-                        </div>
-                    </div>
-                </div>
-
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-header">
+            <a href="https://grupomedios.com/" target="_blank" class="footer-header__logo">
+                <img src="./assets/img/LOGO_GM_blanco.png" alt="Grupo Medios" class="footer-logo" width="150"
+                    height="50">
+            </a>
+            <span class="footer-sales">Ventas: ventas@grupomedios.com</span>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/grupomedios/" target="_blank">
+                    <i class="bi bi-linkedin footer-icon"></i>
+                </a>
+                <a href="https://www.facebook.com/EditorialGrupoMedios/" target="_blank">
+                    <i class="bi bi-facebook footer-icon"></i>
+                </a>
+                <a href="https://x.com/g_medios" target="_blank">
+                    <i class="bi bi-twitter-x footer-icon"></i>
+                </a>
             </div>
-
-            <button class="player__more">
-                Más videos
-            </button>
-
         </div>
+        <div class="footer-marcas__grid">
+            <div class="footer-marca">
+                <a target="_blank" href="https://www.dondeir.com/" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/donde-ir-logo-blanco.png" alt="Donde ir"
+                        class="footer-marca__logo">
+                </a>
+            </div>
+            <div class="footer-marca">
+                <a target="_blank" href="https://www.cocinavital.mx/" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/CocinaVital_blanco.png" alt="Cocina Vital"
+                        class="footer-marca__logo">
+                </a>
+            </div>
+            <div class="footer-marca">
+                <a target="_blank" href="https://www.futboltotal.com.mx/" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/futbolTotal-bco.png" alt="Futbol Total"
+                        class="footer-marca__logo">
+                </a>
+            </div>
+            <div class="footer-marca">
+                <a target="_blank" href="https://somosnews.com.mx/" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/somos-news.png" alt="Somos News" class="footer-marca__logo">
+                </a>
+            </div>
+            <div class="footer-marca">
+                <a target="_blank" href="https://www.mujerde10.com/" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/m10.png" alt="Mujer de 10"
+                        class="footer-marca__logo filter-white">
+                </a>
+            </div>
+            <div class="footer-marca">
+                <a target="_blank" href="https://mitsloanreview.mx/" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/logo-mit.png" alt="MIT Sloan"
+                        class="footer-marca__logo filter-white">
+                </a>
+            </div>
+            <div class="footer-marca">
+                <a target="_blank" href="https://gourmetdemexico.com.mx/" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/Gourmet-de-Mexico-blanco.png" alt="Gourmet México"
+                        class="footer-marca__logo">
+                </a>
+            </div>
+            <div class="footer-marca">
+                <a target="_blank" href="https://openrevista.com/" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/open.png" alt="OPEN"
+                        class="footer-marca__logo filter-white open">
+                </a>
+            </div>
+            <div class="footer-marca">
+                <a target="_blank" href="https://www.soygrupero.com.mx/" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/SG-blanco-8.png" alt="Soy Grupero" class="footer-marca__logo">
+                </a>
+            </div>
+            <div class="footer-marca">
+                <a target="_blank" href="https://impulsogeek.com/" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/ImpulsoGeek_blanco.png" alt="Impulso Geek"
+                        class="footer-marca__logo">
+                </a>
+            </div>
+            <div class="footer-marca">
+                <a target="_blank" href="https://www.cdi.org.mx/" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/IDC_blanco.png" alt="IDC" class="footer-marca__logo">
+                </a>
+            </div>
+            <div class="footer-marca">
+                <a target="_blank" href="https://motormania.com.mx/" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/motormania-logo.png" alt="Motormania"
+                        class="footer-marca__logo filter-white">
+                </a>
+            </div>
+            <div class="footer-marca">
+                <a target="_blank" href="https://hbeyondmagazine.mx/" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/HB-Logo-8.png" alt="Hight & Beyond"
+                        class="footer-marca__logo filter-white">
+                </a>
+            </div>
+            <div class="footer-marca">
+                <a target="_blank" href="https://laguiacentral.com/" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/laguiacentral.svg" alt="La guía central"
+                        class="footer-marca__logo filter-white">
+                </a>
+            </div>
+            <div class="footer-marca">
+                <a target="_blank" href="" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/Comscore_Logo_Black_01.png" alt="Comscore"
+                        class="footer-marca__logo filter-white">
+                </a>
+            </div>
+            <div class="footer-marca">
+                <a target="_blank" href="" class="footer-marca__link">
+                    <img src="./assets/img/logos-footer/IAB_logo.svg-1024x513.png" alt="IAB"
+                        class="footer-marca__logo filter-white">
+                </a>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="footer-info__copy">
+                © 2026 Grupo Medios. Todos los derechos reservados.
+            </div>
+            <div class="footer-info__terms">
+                <a href="https://grupomedios.com/contacto/" target="_blank">Contacto</a>
+                <a href="https://grupomedios.com/anunciate/" target="_blank">Anúnciate con nosotros</a>
+                <a href="https://grupomedios.com/uso-de-cookies/" target="_blank">Uso de cookies</a>
+                <a href="https://grupomedios.com/politica-de-privacidad/" target="_blank">Política de privacidad</a>
+            </div>
+        </div>
+    </footer>
 
-    </div>
-
-</section>
+    <!-- Botón volver arriba -->
+    <button class="btn-back-top" aria-label="Volver arriba">
+        <i class="bi bi-chevron-up"></i>
+    </button>
 
     <script src="./assets/js/main.js" defer></script>
 </body>
