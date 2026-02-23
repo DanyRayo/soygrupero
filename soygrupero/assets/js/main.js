@@ -154,58 +154,81 @@ btnCompartir.addEventListener("click", async () => {
     fallbackCopy(videoURL);
 
 });
-/*-------------------Shorts preview-------------------*/
-console.log("MAIN JS FUNCIONANDO");
+/*-------------------Shorts preview (Dailymotion)-------------------*/
+console.log("SHORTS HOVER PREVIEW ACTIVO");
 
+/* ---------- CONFIGURACIÓN ---------- */
 const shorts = [
-  { id: "WuOYQaVBdYU" },
-  { id: "TYOTDMW5zTE" },
-  { id: "FnP4qgLWMUc" }
+    {
+        id: "x9uzzy0",
+        thumb: "./assets/img/shorts/dailymotion-short-1.webp"
+    },
+    {
+        id: "x9b2r54",
+        thumb: "./assets/img/shorts/dailymotion-short-2.webp"
+    },
+    {
+        id: "x99vfww",
+        thumb: "./assets/img/shorts/dailymotion-short-3.webp"
+    }
 ];
 
 const container = document.getElementById("shortsContainer");
 
-shorts.forEach(video => {
+if (container) {
 
-  const item = document.createElement("div");
-  item.className = "shorts-item";
+    shorts.forEach(({ id, thumb }) => {
 
-  item.innerHTML = `
-    <div class="shorts-item__bg"></div>
-    <div class="shorts-thumb">
-      <img 
-        src="https://img.youtube.com/vi/${video.id}/hqdefault.jpg"
-        alt="YouTube Short"
-        loading="lazy"
-      />
-    </div>
-  `;
+        const item = document.createElement("div");
+        item.className = "shorts-item";
 
-  let iframe = null;
+        item.innerHTML = `
+            <div class="shorts-item__bg"></div>
+            <div class="shorts-thumb">
+                <img 
+                    src="${thumb}"
+                    alt="Short preview"
+                    loading="lazy"
+                    decoding="async"
+                    width="720"
+                    height="1280"
+                />
+            </div>
+        `;
 
-  item.addEventListener("mouseenter", () => {
-    if (window.innerWidth > 768 && !iframe) {
-      iframe = document.createElement("iframe");
-      iframe.src = `https://www.youtube.com/embed/${video.id}?autoplay=1&mute=1&controls=0&loop=1&playlist=${video.id}`;
-      iframe.allow = "autoplay";
-      iframe.className = "shorts-preview";
-      item.appendChild(iframe);
-    }
-  });
+        const thumbContainer = item.querySelector(".shorts-thumb");
+        let iframe = null;
 
-  item.addEventListener("mouseleave", () => {
-    if (iframe) {
-      iframe.remove();
-      iframe = null;
-    }
-  });
+        /* -------- HOVER (solo desktop) -------- */
+        item.addEventListener("mouseenter", () => {
+            if (window.innerWidth > 768 && !iframe) {
 
-  item.addEventListener("click", () => {
-    window.open(`https://youtube.com/shorts/${video.id}`, "_blank");
-  });
+                iframe = document.createElement("iframe");
+                iframe.src = `https://www.dailymotion.com/embed/video/${id}?autoplay=1&mute=1&loop=1`;
+                iframe.allow = "autoplay";
+                iframe.className = "shorts-preview";
+                iframe.loading = "lazy";
 
-  container.appendChild(item);
-});
+                thumbContainer.appendChild(iframe);
+            }
+        });
+
+        item.addEventListener("mouseleave", () => {
+            if (iframe) {
+                iframe.remove();
+                iframe = null;
+            }
+        });
+
+        /* -------- CLICK -------- */
+        item.addEventListener("click", () => {
+            window.open(`https://www.dailymotion.com/video/${id}`, "_blank");
+        });
+
+        container.appendChild(item);
+    });
+
+}
 
 //-------------Función del reproductor--------------///
 document.addEventListener("DOMContentLoaded", () => {
@@ -300,4 +323,30 @@ document.addEventListener("DOMContentLoaded", () => {
     backTopBtn.addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
+});
+
+/*-------------Animaciones fade-in al hacer scroll -------------*/
+document.addEventListener("DOMContentLoaded", () => {
+    const fadeEls = document.querySelectorAll(".fade-in");
+    if (!fadeEls.length) return;
+
+    if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fade-in--visible");
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        fadeEls.forEach(el => {
+            observer.observe(el);
+        });
+    } else {
+        // Fallback simple: mostrar todo sin animación avanzada
+        fadeEls.forEach(el => el.classList.add("fade-in--visible"));
+    }
 });

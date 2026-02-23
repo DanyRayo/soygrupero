@@ -29,7 +29,7 @@ body{
     background-color: #5f5b5ba9;
 }
 
-.shorts-vermas, .playlist-2__vermas, .playlist-3__vermas, .playlist-4__vermas, .player__more, .player__badge {
+.shorts-vermas, .playlist-2__vermas, .playlist-3__vermas, .playlist-4__vermas, .player__more, .player__badge, .destacado-aside__more {
     color: var(--negro);
 }
 
