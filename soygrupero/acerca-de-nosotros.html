@@ -217,7 +217,7 @@
     <link rel='stylesheet' id='googleFontUbuntu-css'
         href='https://fonts.googleapis.com/css2?family=Ubuntu+Sans%3Aital%2Cwght%400%2C100..800%3B1%2C100..800&#038;display=swap&#038;ver=1'
         type='text/css' media='all' />
-        <!-- Fuente para header y footer -->
+    <!-- Fuente para header y footer -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -228,17 +228,16 @@
     <link rel='stylesheet' id='bootstrapIcons-css'
         href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css?ver=1' type='text/css'
         media='all' />
-    <link rel='stylesheet' id='style-css' href='./style.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='style-css' href='./style-header.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='style-css' href='./style-footer.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='styles-pmarca-css'
-        href='https://www.soygrupero.com.mx/wp-content/themes/soygrupero2019/css/styles-pmarca.css?ver=1'
-        type='text/css' media='all' />
+    <link rel='stylesheet' id='style-css' href='./assets/css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='style-css' href='./assets/css/style-header.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='style-css' href='./assets/css/style-footer.css' type='text/css' media='all' />
+    <link rel="stylesheet" id='style-css' href="./assets/css/style-directorio.css" type='text/css' media='all' />
+    <link rel='stylesheet' id='styles-pmarca-css' href='./assets/css/styles-pmarca.css' type='text/css' media='all' />
     <link rel='stylesheet' id='bootstrap-pmarca-css'
         href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css?ver=1' type='text/css'
         media='all' />
     <link rel='stylesheet' id='styleGeneral-css'
-        href='https://grupomedios.com/elements-gm/css/style-general-v1.css?ver=1' type='text/css' media='all' />
+        href='./assets/css/style-general-v1.css' type='text/css' media='all' />
     <script type='text/javascript' src='https://www.soygrupero.com.mx/wp-includes/js/jquery/jquery.js?ver=1.12.4'>
     </script>
     <script type='text/javascript'
@@ -570,318 +569,223 @@
     </section>
     <!-- FIN SECCIÓN VALORES -->
     <!-- SECCION EQUIPO -->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="pm_tituloSeccion text-center">
-                        <h2>Equipo de Soy Grupero</h2>
-                        <span class="pm_divisionTitulo pm_colorPrimarioBack pm_lineaCenter"></span>
-                    </div>
-                </div>
+    <section class="dgm-container-fluid">
+        <div class="dgm-main-wrapper">
+            <div class="dgm-header">
+                <h2 class="dgm-title">Equipo de Soy Grupero</h2>
+                <p class="dgm-description">Soy Grupero cuenta con voces y plumas destacadas dentro del
+                    periodismo especializado en música regional mexicana, lo que la convierte en una marca seria,
+                    informada, y veraz con el contenido que se pública en el sitio web y redes sociales.</p>
+                <h3 class="dgm-subtitle">Directorio Grupo Medios</h3>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <p class="pm_descripcionValores">Soy Grupero cuenta con voces y plumas destacadas dentro del
-                        periodismo especializado en música regional mexicana, lo que la convierte en una marca seria,
-                        informada, y veraz con el contenido que se pública en el sitio web y redes sociales.</p>
+            <section class="dgm-grid">
+                <div class="dgm-card">
+                    <div class="dgm-card__img-container">
+                        <img src="./assets/img/fotos/gustavo-herrera.jpg" alt="Gustavo Herrera" class="dgm-card__img">
+                    </div>
+                    <div class="dgm-card__content">
+                        <h3 class="dgm-card__name">Gustavo Herrera</h3>
+                        <p class="dgm-card__role">Director General</p>
+                        <a href="https://www.linkedin.com/in/gustavoherrera/" target="_blank" class="dgm-card__social">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor"
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
+                <div class="dgm-card">
+                    <div class="dgm-card__img-container">
+                        <img src="./assets/img/fotos/elizabeth-solis.jpg" alt="Elizabeth Solís" class="dgm-card__img">
+                    </div>
+                    <div class="dgm-card__content">
+                        <h3 class="dgm-card__name">Elizabeth Solís</h3>
+                        <p class="dgm-card__role">Directora Editorial</p>
+                        <a href="https://www.linkedin.com/in/elizabeth-solis/" target="_blank" class="dgm-card__social">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor"
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="dgm-card">
+                    <div class="dgm-card__img-container">
+                        <img src="./assets/img/fotos/monica-miranda.jpg" alt="Mónica Miranda" class="dgm-card__img">
+                    </div>
+                    <div class="dgm-card__content">
+                        <h3 class="dgm-card__name">Mónica Miranda</h3>
+                        <p class="dgm-card__role">Subdirectora comercial</p>
+                        <a href="https://www.linkedin.com/in/monica-miranda-04054b55/" target="_blank"
+                            class="dgm-card__social">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor"
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="dgm-card">
+                    <div class="dgm-card__img-container">
+                        <img src="./assets/img/fotos/erika-barragan.jpg" alt="Erika Barragán" class="dgm-card__img">
+                    </div>
+                    <div class="dgm-card__content">
+                        <h3 class="dgm-card__name">Erika Santiago</h3>
+                        <p class="dgm-card__role">Head de desarrollo</p>
+                        <a href="https://www.linkedin.com/in/erika-santiago-barragan/" target="_blank"
+                            class="dgm-card__social">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor"
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="dgm-card">
+                    <div class="dgm-card__img-container">
+                        <img src="./assets/img/fotos/roman-gomez.jpg" alt="Román Gómez" class="dgm-card__img">
+                    </div>
+                    <div class="dgm-card__content">
+                        <h3 class="dgm-card__name">Román Gómez</h3>
+                        <p class="dgm-card__role">Head de audiovisual</p>
+                        <!-- <a href="#" class="dgm-card__social">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor"
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="dgm-card">
+                    <div class="dgm-card__img-container">
+                        <img src="./assets/img/fotos/seydel-cruz.jpg" alt="Seydel Cruz" class="dgm-card__img">
+                    </div>
+                    <div class="dgm-card__content">
+                        <h3 class="dgm-card__name">Seydel Cruz</h3>
+                        <p class="dgm-card__role">Marketing y eventos</p>
+                        <a href="https://www.linkedin.com/in/lrc-seydel-cruz-gonz%C3%A1lez" target="_blank"
+                            class="dgm-card__social">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor"
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="dgm-card">
+                    <div class="dgm-card__img-container">
+                        <img src="./assets/img/fotos/felipe-rodriguez.jpg" alt="Felipe Rodríguez" class="dgm-card__img">
+                    </div>
+                    <div class="dgm-card__content">
+                        <h3 class="dgm-card__name">Felipe Rodríguez</h3>
+                        <p class="dgm-card__role">Director de Finanzas</p>
+                        <!-- <a href="#" class="dgm-card__social">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor"
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="dgm-card">
+                    <div class="dgm-card__img-container">
+                        <img src="./assets/img/fotos/luz-ventura.jpg" alt="Luz Ventura" class="dgm-card__img">
+                    </div>
+                    <div class="dgm-card__content">
+                        <h3 class="dgm-card__name">Luz Ventura</h3>
+                        <p class="dgm-card__role">Head de Recursos Humanos</p>
+                        <a href="https://www.linkedin.com/in/luz-ventura/" target="_blank" class="dgm-card__social">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor"
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div class="dgm-tabs">
+                <button class="dgm-tab-btn active" data-target="editores">
+                    Editores
+                </button>
+                <button class="dgm-tab-btn" data-target="colaboradores">
+                    Colaboradores
+                </button>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <h4 class="pm_tituloEquipo text-center pm_colorPrimarioFont ">Directorio Grupo Medios</h4>
-                </div>
-            </div>
-            <div class="row">
-                <!--<div class="col-lg-3 col-md-6 col-12">
-				<div class="pm_boxCardEquipo">
-					<div class="pm_boxImgEquipo">
-						<img src="https://www.soygrupero.com.mx/wp-content/themes/soygrupero2019/images/landing-marca/equipo/jose-manuel-farah.jpg" alt="Staff Equipo Soy Grupero">
-					</div>
-					<div class="pm_nombreEquipo">
-						<h3 class="pm_colorPrimarioFont">José Farah</h3>
-						<span class="pm_cargoEquipo">CEO, Grupo Medios</span>
-					</div>
-					<div class="pm_redesEquipo">
-						<a href="https://www.linkedin.com/in/jose-manuel-farah-8826a13" target="_blank"><i class="bi bi-linkedin"></i></a>						
-					</div>
-				</div>
-			</div>-->
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="pm_boxCardEquipo">
-                        <div class="pm_boxImgEquipo">
-                            <img src="https://www.soygrupero.com.mx/wp-content/themes/soygrupero2019/images/landing-marca/equipo/elizabeth-solis.jpg"
-                                alt="Staff Equipo Soy Grupero">
-                        </div>
-                        <div class="pm_nombreEquipo">
-                            <h3 class="pm_colorPrimarioFont">Elizabeth Solís</h3>
-                            <span class="pm_cargoEquipo">Directora Editorial</span>
-                        </div>
-                        <div class="pm_redesEquipo">
-                            <a href="https://www.linkedin.com/in/elizabeth-solis/" target="_blank"><i
-                                    class="bi bi-linkedin"></i></a>
-                        </div>
+            <section class="dgm-grid dgm-grid-tabs">
+
+                <!-- Editores -->
+                <div class="dgm-card" data-type="editores">
+                    <div class="dgm-card__img-container">
+                        <img src="./assets/img/fotos/alejandro-guzman.jpg" alt="Alejandro Guzmán" class="dgm-card__img">
+                    </div>
+                    <div class="dgm-card__content">
+                        <h3 class="dgm-card__name">Alejandro Guzmán</h3>
+                        <p class="dgm-card__role">Editor Web</p>
+                        <!-- <a href="#" class="dgm-card__social">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor"
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </a> -->
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="pm_boxCardEquipo">
-                        <div class="pm_boxImgEquipo">
-                            <img src="https://www.soygrupero.com.mx/wp-content/themes/soygrupero2019/images/landing-marca/equipo/gustavo-herrera.jpg"
-                                alt="Staff Equipo Soy Grupero">
-                        </div>
-                        <div class="pm_nombreEquipo">
-                            <h3 class="pm_colorPrimarioFont">Gustavo Herrera</h3>
-                            <span class="pm_cargoEquipo">Director Digital</span>
-                        </div>
-                        <div class="pm_redesEquipo">
-                            <a href="https://www.linkedin.com/in/gustavoherrera/" target="_blank"><i
-                                    class="bi bi-linkedin"></i></a>
-                        </div>
+                <div class="dgm-card" data-type="editores">
+                    <div class="dgm-card__img-container">
+                        <img src="./assets/img/fotos/estefani-escobar.jpg" alt="Estefani Escobar" class="dgm-card__img">
+                    </div>
+                    <div class="dgm-card__content">
+                        <h3 class="dgm-card__name">Estefani Escobar</h3>
+                        <p class="dgm-card__role">Editora Web</p>
+                        <a href="https://x.com/fanirep" class="dgm-card__social" aria-label="Twitter">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="pm_boxCardEquipo">
-                        <div class="pm_boxImgEquipo">
-                            <img src="https://www.soygrupero.com.mx/wp-content/themes/soygrupero2019/images/landing-marca/equipo/monica-miranda.jpg"
-                                alt="Staff Equipo Soy Grupero">
-                        </div>
-                        <div class="pm_nombreEquipo">
-                            <h3 class="pm_colorPrimarioFont">Mónica Miranda</h3>
-                            <span class="pm_cargoEquipo">Subdirectora comercial</span>
-                        </div>
-                        <div class="pm_redesEquipo">
-                            <a href="https://www.linkedin.com/in/monica-miranda-04054b55/" target="_blank"><i
-                                    class="bi bi-linkedin"></i></a>
-                        </div>
+                <div class="dgm-card" data-type="editores">
+                    <div class="dgm-card__img-container">
+                        <img src="./assets/img/fotos/photo.jpg" alt="Alejandro Guzmán" class="dgm-card__img">
+                    </div>
+                    <div class="dgm-card__content">
+                        <h3 class="dgm-card__name">René Muñoz</h3>
+                        <p class="dgm-card__role"></p>
+                        <a href="https://x.com/RENE_MUNOZ" class="dgm-card__social" aria-label="Twitter">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="pm_boxCardEquipo">
-                        <div class="pm_boxImgEquipo">
-                            <img src="https://www.soygrupero.com.mx/wp-content/themes/soygrupero2019/images/landing-marca/equipo/erika-barragan.jpg"
-                                alt="Staff Equipo Soy Grupero">
-                        </div>
-                        <div class="pm_nombreEquipo">
-                            <h3 class="pm_colorPrimarioFont">Erika Santiago</h3>
-                            <span class="pm_cargoEquipo">Head de desarrollo</span>
-                        </div>
-                        <div class="pm_redesEquipo">
-                            <a href="https://www.linkedin.com/in/erika-santiago-barragan/" target="_blank"><i
-                                    class="bi bi-linkedin"></i></a>
-                        </div>
+                <div class="dgm-card" data-type="editores">
+                    <div class="dgm-card__img-container">
+                        <img src="./assets/img/fotos/yazmin-calvario.jpg" alt="Yazmin Calvario" class="dgm-card__img">
                     </div>
-                </div>
-                <!--<div class="col-lg-3 col-md-6 col-12">
-				<div class="pm_boxCardEquipo">
-					<div class="pm_boxImgEquipo">
-						<img src="https://www.soygrupero.com.mx/wp-content/themes/soygrupero2019/images/landing-marca/equipo/paula-sanchez.jpg" alt="Staff Equipo Soy Grupero">
-					</div>
-					<div class="pm_nombreEquipo">
-						<h3 class="pm_colorPrimarioFont">Paula Sánchez</h3>
-						<span class="pm_cargoEquipo">Head de SEO</span>
-					</div>
-					<div class="pm_redesEquipo">
-						<a href="https://www.linkedin.com/in/ana-paula-sánchez-muratalla-9b2470161" target="_blank"><i class="bi bi-linkedin"></i></a>						
-					</div>
-				</div>
-			</div>-->
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="pm_boxCardEquipo">
-                        <div class="pm_boxImgEquipo">
-                            <img src="https://www.soygrupero.com.mx/wp-content/themes/soygrupero2019/images/landing-marca/equipo/roman-gomez.jpg"
-                                alt="Staff Equipo Soy Grupero">
-                        </div>
-                        <div class="pm_nombreEquipo">
-                            <h3 class="pm_colorPrimarioFont">Román Gómez</h3>
-                            <span class="pm_cargoEquipo">Head de audiovisual</span>
-                        </div>
-                        <div class="pm_redesEquipo">
-                            <!--<a href="" target="_blank"><i class="bi bi-linkedin"></i></a>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="pm_boxCardEquipo">
-                        <div class="pm_boxImgEquipo">
-                            <img src="https://www.soygrupero.com.mx/wp-content/themes/soygrupero2019/images/landing-marca/equipo/seydel-cruz.jpg"
-                                alt="Staff Equipo Soy Grupero">
-                        </div>
-                        <div class="pm_nombreEquipo">
-                            <h3 class="pm_colorPrimarioFont">Seydel Cruz</h3>
-                            <span class="pm_cargoEquipo">Marketing y eventos</span>
-                        </div>
-                        <div class="pm_redesEquipo">
-                            <a href="https://www.linkedin.com/in/lrc-seydel-cruz-gonzález" target="_blank"><i
-                                    class="bi bi-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="pm_boxCardEquipo">
-                        <div class="pm_boxImgEquipo">
-                            <img src="https://www.soygrupero.com.mx/wp-content/themes/soygrupero2019/images/landing-marca/equipo/felipe-rodriguez.jpg"
-                                alt="Staff Equipo Soy Grupero">
-                        </div>
-                        <div class="pm_nombreEquipo">
-                            <h3 class="pm_colorPrimarioFont">Felipe Rodríguez</h3>
-                            <span class="pm_cargoEquipo">Director de Finanzas</span>
-                        </div>
-                        <div class="pm_redesEquipo">
-                            <!--<a href="" target="_blank"><i class="bi bi-linkedin"></i></a>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="pm_boxCardEquipo">
-                        <div class="pm_boxImgEquipo">
-                            <img src="https://www.soygrupero.com.mx/wp-content/themes/soygrupero2019/images/landing-marca/equipo/luz-ventura.jpg"
-                                alt="Staff Equipo Soy Grupero">
-                        </div>
-                        <div class="pm_nombreEquipo">
-                            <h3 class="pm_colorPrimarioFont">Luz Ventura</h3>
-                            <span class="pm_cargoEquipo">Head de Recursos Humanos</span>
-                        </div>
-                        <div class="pm_redesEquipo">
-                            <a href="https://www.linkedin.com/in/luz-ventura" target="_blank"><i
-                                    class="bi bi-linkedin"></i></a>
-                        </div>
+                    <div class="dgm-card__content">
+                        <h3 class="dgm-card__name">Yazmin Calvario</h3>
+                        <p class="dgm-card__role">Editora Web</p>
+                        <!-- <a href="#" class="dgm-card__social">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor"
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </a> -->
                     </div>
                 </div>
 
-            </div>
-            <!-- EMPIEZAN LAS TABS -->
-            <div class="row">
-                <ul class="nav nav-pills mb-3 pm_tabsEquipo" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                            aria-selected="true">Editores de Soy Grupero</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                            aria-selected="false">Colaboradores de Soy Grupero</button>
-                    </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active pm_tabPaneScroll" id="pills-home" role="tabpanel"
-                        aria-labelledby="pills-home-tab" tabindex="0">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <div class="pm_boxCardEquipo">
-                                    <div class="pm_boxImgEquipo">
-                                        <img width="150" height="150"
-                                            src="https://www.soygrupero.com.mx/wp-content/uploads/2025/04/foto-perfil-alejandro-guzman.jpg"
-                                            class="attachment-large size-large" alt="Staff Equipo Soy Grupero"
-                                            srcset="https://www.soygrupero.com.mx/wp-content/uploads/2025/04/foto-perfil-alejandro-guzman.jpg 150w, https://www.soygrupero.com.mx/wp-content/uploads/2025/04/foto-perfil-alejandro-guzman-24x24.jpg 24w, https://www.soygrupero.com.mx/wp-content/uploads/2025/04/foto-perfil-alejandro-guzman-48x48.jpg 48w, https://www.soygrupero.com.mx/wp-content/uploads/2025/04/foto-perfil-alejandro-guzman-96x96.jpg 96w"
-                                            sizes="(max-width: 150px) 100vw, 150px" /> </div>
-                                    <div class="pm_nombreEquipo">
-                                        <h3 class="pm_colorPrimarioFont">Alejandro Guzmán</h3>
-                                        <span class="pm_cargoEquipo">Editor Web</span>
-                                    </div>
-                                    <div class="pm_redesEquipo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <div class="pm_boxCardEquipo">
-                                    <div class="pm_boxImgEquipo">
-                                        <img width="150" height="150"
-                                            src="https://www.soygrupero.com.mx/wp-content/uploads/2022/12/fany-perfil.jpg"
-                                            class="attachment-large size-large" alt="Staff Equipo Soy Grupero"
-                                            srcset="https://www.soygrupero.com.mx/wp-content/uploads/2022/12/fany-perfil.jpg 150w, https://www.soygrupero.com.mx/wp-content/uploads/2022/12/fany-perfil-24x24.jpg 24w, https://www.soygrupero.com.mx/wp-content/uploads/2022/12/fany-perfil-48x48.jpg 48w, https://www.soygrupero.com.mx/wp-content/uploads/2022/12/fany-perfil-96x96.jpg 96w"
-                                            sizes="(max-width: 150px) 100vw, 150px" /> </div>
-                                    <div class="pm_nombreEquipo">
-                                        <h3 class="pm_colorPrimarioFont">Estefani Escobar</h3>
-                                        <span class="pm_cargoEquipo">Editora Web</span>
-                                    </div>
-                                    <div class="pm_redesEquipo">
-                                        <a href="https://www.facebook.com/https://www.facebook.com/estefani.escobargarcia"
-                                            target="_blank"><i class="bi bi-facebook "></i></a>
-                                        <a href="https://www.twitter.com/fanirep" target="_blank"><i
-                                                class="bi bi-twitter-x "></i></a>
-                                        <a href="https://instagram.com/https://www.instagram.com/fanirep/"
-                                            target="_blank"><i class="bi bi-instagram "></i></a>
-                                        <a href="https://www.linkedin.com/in/https://mx.linkedin.com/in/estefani-escobar-36b7612b"
-                                            target="_blank"><i class="bi bi-linkedin "></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <div class="pm_boxCardEquipo">
-                                    <div class="pm_boxImgEquipo">
-                                    </div>
-                                    <div class="pm_nombreEquipo">
-                                        <h3 class="pm_colorPrimarioFont">René Muñoz</h3>
-                                        <span class="pm_cargoEquipo">rene.munoz</span>
-                                    </div>
-                                    <div class="pm_redesEquipo">
-                                        <a href="https://www.facebook.com/https://www.soygrupero.com.mx/"
-                                            target="_blank"><i class="bi bi-facebook "></i></a>
-                                        <a href="https://www.twitter.com/@RENE_MUNOZ" target="_blank"><i
-                                                class="bi bi-twitter-x "></i></a>
-                                        <a href="https://instagram.com/https://www.instagram.com/remunoz/?hl=es-la"
-                                            target="_blank"><i class="bi bi-instagram "></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <div class="pm_boxCardEquipo">
-                                    <div class="pm_boxImgEquipo">
-                                        <img width="150" height="150"
-                                            src="https://www.soygrupero.com.mx/wp-content/uploads/2023/01/yaz-yaz.jpg"
-                                            class="attachment-large size-large" alt="Staff Equipo Soy Grupero"
-                                            srcset="https://www.soygrupero.com.mx/wp-content/uploads/2023/01/yaz-yaz.jpg 150w, https://www.soygrupero.com.mx/wp-content/uploads/2023/01/yaz-yaz-24x24.jpg 24w, https://www.soygrupero.com.mx/wp-content/uploads/2023/01/yaz-yaz-48x48.jpg 48w, https://www.soygrupero.com.mx/wp-content/uploads/2023/01/yaz-yaz-96x96.jpg 96w"
-                                            sizes="(max-width: 150px) 100vw, 150px" /> </div>
-                                    <div class="pm_nombreEquipo">
-                                        <h3 class="pm_colorPrimarioFont">Yazmin Calvario</h3>
-                                        <span class="pm_cargoEquipo">Yazmin Calvario</span>
-                                    </div>
-                                    <div class="pm_redesEquipo">
-                                        <a href="https://instagram.com/https://www.instagram.com/yazmincalvario_/"
-                                            target="_blank"><i class="bi bi-instagram "></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Colaboradores -->
+                <div class="dgm-card" data-type="colaboradores">
+                    <div class="dgm-card__img-container">
+                        <img src="./assets/img/fotos/noemi-pantoja.jpeg" alt="Noemi Pantoja" class="dgm-card__img">
                     </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                        tabindex="0">
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <div class="pm_boxCardEquipo">
-                                    <div class="pm_boxImgEquipo">
-                                        <img width="480" height="640"
-                                            src="https://www.soygrupero.com.mx/wp-content/uploads/2026/02/img-7712-de-tamano-mediano.jpeg"
-                                            class="attachment-large size-large" alt="Staff Equipo Soy Grupero"
-                                            srcset="https://www.soygrupero.com.mx/wp-content/uploads/2026/02/img-7712-de-tamano-mediano.jpeg 480w, https://www.soygrupero.com.mx/wp-content/uploads/2026/02/img-7712-de-tamano-mediano-225x300.jpeg 225w"
-                                            sizes="(max-width: 480px) 100vw, 480px" /> </div>
-                                    <div class="pm_nombreEquipo">
-                                        <h3 class="pm_colorPrimarioFont">Issa Morales</h3>
-                                        <span class="pm_cargoEquipo">Content Manager</span>
-                                    </div>
-                                    <div class="pm_redesEquipo">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <div class="pm_boxCardEquipo">
-                                    <div class="pm_boxImgEquipo">
-                                    </div>
-                                    <div class="pm_nombreEquipo">
-                                        <h3 class="pm_colorPrimarioFont">Noemi Pantoja</h3>
-                                        <span class="pm_cargoEquipo">noemi.pantoja</span>
-                                    </div>
-                                    <div class="pm_redesEquipo">
-                                        <a href="https://instagram.com/https://www.instagram.com/noemi.pantoja/"
-                                            target="_blank"><i class="bi bi-instagram "></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="dgm-card__content">
+                        <h3 class="dgm-card__name">Issa Morales</h3>
+                        <p class="dgm-card__role">Content Manager</p>
+                        <!-- <a href="#" class="dgm-card__social">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="currentColor"
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </a> -->
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </section>
     <!-- FIN SECCION EQUIPO -->
@@ -889,11 +793,11 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="pm_boxMisVis pm_colorAcentoBack">
+                <div class="col-lg-6 col-md-6 col-12 mb-5">
+                    <div class="card-MisVis pm_colorAcentoBack">
                         <div class="pm_tituloSeccion text-center">
                             <h2>Misión</h2>
-                            <span class="pm_divisionTitulo pm_colorPrimarioBack pm_lineaCenter"></span>
+                            <span class="linea-divisora-MisVis"></span>
                         </div>
                         <p>La misión de Soy Grupero es fomentar el conocimiento, la apreciación y la expansión de la
                             música regional mexicana a nivel global. A través de contenido auténtico, relevante y de
@@ -903,11 +807,11 @@
                             consagrados como a las nuevas generaciones.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="pm_boxMisVis pm_colorAcentoSecundarioBack">
+                <div class="col-lg-6 col-md-6 col-12 mb-5">
+                    <div class="card-MisVis pm_colorAcentoSecundarioBack">
                         <div class="pm_tituloSeccion text-center">
                             <h2>Visión</h2>
-                            <span class="pm_divisionTitulo pm_colorPrimarioBack pm_lineaCenter"></span>
+                            <span class="linea-divisora-MisVis"></span>
                         </div>
                         <p>La visión de Soy Grupero es ser la principal fuente de información, entretenimiento y
                             difusión de la música regional mexicana y otros géneros, conectando a los fanáticos con lo
@@ -1094,7 +998,8 @@
         src='https://www.soygrupero.com.mx/wp-content/themes/soygrupero2019/js/slick.min.js?ver=1'></script>
     <script type='text/javascript'
         src='https://www.soygrupero.com.mx/wp-content/themes/soygrupero2019/js/menu-v1.js?ver=1'></script>
-    <script type='text/javascript' src='./menu2026.js'></script>
+    <script type='text/javascript' src='./assets/js/menu2026.js'></script>
+    <script type='text/javascript' src='./assets/js/main.js'></script>
     <script type='text/javascript'
         src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js?ver=1'></script>
     <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js?ver=1'>
