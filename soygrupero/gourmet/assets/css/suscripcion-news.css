@@ -1,0 +1,524 @@
+.LANDING-SUSCRIPCION-NEWS-backCocina {
+    background-image: url(../images/fondo-news-cocina.jpg);
+    background-repeat: repeat-y;
+    background-position: top;
+    background-size: contain;
+}
+.LANDING-SUSCRIPCION-NEWS-backDondeir {
+    background-image: url(../images/fondo-news-dondeir.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.LANDING-SUSCRIPCION-NEWS-backMujer {
+    background-image: url(../images/fondo-news-mujer.jpg);
+    background-repeat: repeat-y;
+    background-position: top;
+    background-size: contain;
+}
+.LANDING-SUSCRIPCION-NEWS-backMujer10 {
+    background: #c8b8d8;
+    background-repeat: repeat-y;
+    background-position: top;
+    background-size: contain;
+}
+.LANDING-SUSCRIPCION-NEWS-backGourmet {
+    background-image: url(../images/fondo-news-gourmet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.LANDING-SUSCRIPCION-NEWS-backPlayboy {
+    background-image: url(../images/fondo-news-playboy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.LANDING-SUSCRIPCION-NEWS-backFutbol {
+    background-image: url(../images/fondo-news-ft.jpg);
+    background-repeat: repeat-y;
+    background-position: top;
+    background-size: contain;
+}
+.LANDING-SUSCRIPCION-NEWS-backMit {
+    background-image: url(../images/fondo-news-mit.jpg);
+    background-repeat: repeat-y;
+    background-position: top;
+    background-size: contain;
+}
+.LANDING-SUSCRIPCION-NEWS-backAutos {
+    background-image: url(../images/fondo-news-autoshow.jpg);
+    background-repeat: repeat-y;
+    background-position: top;
+    background-size: contain;
+}
+.LANDING-SUSCRIPCION-NEWS-backSnews {
+    background-image: url(../images/fondo-news-sn.jpg);
+    background-repeat: repeat-y;
+    background-position: top;
+    background-size: contain;
+}
+.LANDING-SUSCRIPCION-NEWS-backSgrupero {
+    /* background-image: url(../images/fondo-news-grupero.jpg); */
+    background-repeat: repeat-y;
+    background-position: top;
+    background-size: contain;
+}
+.skin-container.LANDING-SUSCRIPCION-NEWS-skin {
+    background: transparent;
+}
+.LANDING-SUSCRIPCION-NEWS-section {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    display: inline-block;
+    margin: 0 auto;
+}
+.LANDING-SUSCRIPCION-NEWS-cont {
+    width: 780px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2px;
+    margin-bottom: 30px;
+    display: block;
+}
+.LANDING-SUSCRIPCION-NEWS-img {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    display: block;
+    padding: 20px 30px;
+}
+.LANDING-SUSCRIPCION-NEWS-txt {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    display: inline-block;
+    padding: 0 20px;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 37px;
+    margin-top: 50px;
+}
+.AllBanners.NewsContBanner {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    display: block;
+    float: none;
+    text-align: center;
+}
+.AllBanners.NewsContBanner .leader {
+    margin-top: 130px;
+    margin-bottom: 17px;
+}
+.AllBanners.NewsContBanner .box img {
+    width: 300px;
+}
+.NewsContBanner.Mob {
+    display: none;
+}
+.LANDING-SUSCRIPCION-NEWS-form {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    display: block;
+    padding: 10px 80px 30px;
+    font-size: 19px;
+    margin: 53px 0 0;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .mc-field-group {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2%;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .size1of2 {
+    display: block;
+    float: none;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .mc-field-group label {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    font-weight: bold;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .mc-field-group input {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    outline: none;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .datefield .monthfield input, .LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .datefield .dayfield input {
+    width: 70px;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .nowrap {
+    display: none;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .mc-field-group select {
+    outline: none;
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 0px!important;
+    background-color: #fff!important;
+    height: 39px!important;
+    border-radius: 15px !important;
+    color: #434343!important;
+}
+.LANDING-SUSCRIPCION-NEWS-form .clear {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .button {
+    width: auto!important;
+    border: none;
+    height: auto;
+    background: #f23e42!important;
+    border-radius: 100px!important;
+    font-size: 28px!important;
+    font-weight: bold!important;
+    color: #fff;
+    padding: 8px 80px;
+    line-height: inherit;
+    margin: 0 auto!important;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .button.dondeir {
+    border: none;
+    height: auto;
+    background: #137fc0;
+    border-radius: 100px!important;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    padding: 8px 80px;
+    line-height: inherit;
+    margin: 0 auto;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .button.mujer {
+    width: auto!important;
+    border: none;
+    height: auto;
+    background: #fd696c!important;
+    border-radius: 100px!important;
+    font-size: 28px!important;
+    font-weight: bold!important;
+    color: #fff;
+    padding: 8px 80px;
+    line-height: inherit;
+    margin: 0 auto!important;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .button.mujer10 {
+    width: auto!important;
+    border: none;
+    height: auto;
+    background: #000!important;
+    border-radius: 0px!important;
+    font-size: 28px!important;
+    font-weight: bold!important;
+    color: #fff;
+    padding: 8px 80px;
+    line-height: inherit;
+    margin: 0 auto!important;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .button.gourmet {
+    width: auto!important;
+    border: none;
+    height: auto;
+    background: #821b34!important;
+    border-radius: 100px!important;
+    font-size: 28px!important;
+    font-weight: bold!important;
+    color: #fff;
+    padding: 8px 80px;
+    line-height: inherit;
+    margin: 0 auto!important;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .button.playboy {
+    width: auto!important;
+    border: none;
+    height: auto;
+    background: #a52628!important;
+    border-radius: 100px!important;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    padding: 8px 80px;
+    line-height: inherit;
+    margin: 0 auto;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .button.futbol {
+    width: auto!important;
+    border: none;
+    height: auto;
+    background: #f1e86b!important;
+    border-radius: 100px!important;
+    font-size: 28px!important;
+    font-weight: bold!important;
+    color: #1a1a1a;
+    padding: 8px 80px;
+    line-height: inherit;
+    margin: 0 auto!important;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .button.mit {
+    width: auto!important;
+    border: none;
+    height: auto;
+    background: #005b9c!important;
+    border-radius: 100px!important;
+    font-size: 28px!important;
+    font-weight: bold!important;
+    color: #fefafa;
+    padding: 8px 80px;
+    line-height: inherit;
+    margin: 0 auto!important;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .button.autoshow {
+    width: auto!important;
+    border: none;
+    height: auto;
+    background: #e52230!important;
+    border-radius: 100px!important;
+    font-size: 28px!important;
+    font-weight: bold!important;
+    color: #FFF;
+    padding: 8px 80px;
+    line-height: inherit;
+    margin: 0 auto!important;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .button.somosnews {
+    width: auto!important;
+    border: none;
+    height: auto;
+    background: #0d6e8b!important;
+    border-radius: 100px!important;
+    font-size: 28px!important;
+    font-weight: bold!important;
+    color: #FFF;
+    padding: 8px 80px;
+    line-height: inherit;
+    margin: 0 auto!important;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .button.soygrupero {
+    width: auto!important;
+    border: none;
+    height: auto;
+    background: #c44735!important;
+    border-radius: 100px!important;
+    font-size: 28px!important;
+    font-weight: bold!important;
+    color: #FFF;
+    padding: 8px 80px;
+    line-height: inherit;
+    margin: 0 auto!important;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .button:hover {
+    cursor: pointer;
+    opacity: .6;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+    margin: 0;
+    padding: 3px 0 0 3px;
+    background-color: transparent;
+    color: #c63636;
+    font-size: 14px;
+}
+.mc-field-group .asterisk {
+    color: #c63636;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup div#mce-responses {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup #mce-success-response {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    font-size: 34px;
+    color: #f04048;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0px 27px 0;
+    line-height: 44px;
+    background: #f9f077;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup #mce-success-response.dondeir {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    font-size: 34px;
+    color: #ec9421;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0px 27px 0;
+    line-height: 44px;
+    background: #ffffff;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup #mce-success-response.mujer {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    font-size: 34px;
+    color: #fd696c;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0px 27px 0;
+    line-height: 44px;
+    background: #f6f6f6;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup #mce-success-response.mujer10 {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    font-size: 34px;
+    color: #fd696c;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0px 27px 0;
+    line-height: 44px;
+    background: #f6f6f6;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup #mce-success-response.gourmet {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    font-size: 34px;
+    color: #aa8f74;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0px 27px 0;
+    line-height: 44px;
+    background: #e9dee0;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup #mce-success-response.playboy {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    font-size: 34px;
+    color: #a3282c;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0px 27px 0;
+    line-height: 44px;
+    background: #bebebe;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup #mce-success-response.futbol {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    font-size: 34px;
+    color: #1a1a1a;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0px 27px 0;
+    line-height: 44px;
+    background: #f1e86b;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup #mce-success-response.mit {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    font-size: 34px;
+    color: #1a1a1a;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0px 27px 0;
+    line-height: 44px;
+    background: #27e0fd;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup #mce-success-response.autoshow {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    font-size: 34px;
+    color: #FFF;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0px 27px 0;
+    line-height: 44px;
+    background: #e32637;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup #mce-success-response.somosnews {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    font-size: 34px;
+    color: #FFF;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0px 27px 0;
+    line-height: 44px;
+    background: #0f748e;
+}
+.LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup #mce-success-response.soygrupero {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    font-size: 34px;
+    color: #FFF;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0px 27px 0;
+    line-height: 44px;
+    background: #c44735;
+}
+.LANDING-SUSCRIPCION-NEWS-form .mc-field-group.size1of2 .datefield {
+    width: 100%;
+    display: flex;
+}
+.LANDING-SUSCRIPCION-NEWS-form .mc-field-group.size1of2 .datefield .subfield {
+    margin: 0 8px;
+}
+#mce-MMERGE18 {
+    width: 100%;
+}
+@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 979px) {
+    .LANDING-SUSCRIPCION-NEWS-cont {
+        width: 715px;
+    }
+    .LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .mc-field-group {
+        width: 66%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .LANDING-SUSCRIPCION-NEWS-cont {
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+    .LANDING-SUSCRIPCION-NEWS-form {
+        padding: 10px 40px 30px;
+        margin-top: 80px;
+    }
+    .LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .mc-field-group {
+        width: 87%;
+    }
+    .LANDING-SUSCRIPCION-NEWS-img {
+        padding: 20px 15px;
+    }
+    .LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .button {
+        padding: 6px 60px;
+    }
+    .NewsContBanner.Mob {
+        display: block;
+    }
+    .NewsContBanner.Desk {
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .LANDING-SUSCRIPCION-NEWS-form {
+        padding: 0px 10px 30px;
+        margin: 80px 0 0;
+    }
+    .LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .mc-field-group {
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+    .LANDING-SUSCRIPCION-NEWS-form #mc_embed_signup .button {
+        width: -webkit-fill-available!important;
+        width: -moz-available!important;
+        padding: 6px 20px;
+    }
+    .LANDING-SUSCRIPCION-NEWS-img {
+        padding: 20px 3px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .LANDING-SUSCRIPCION-NEWS-form {
+        padding: 0px 1px 30px;
+    }
+}

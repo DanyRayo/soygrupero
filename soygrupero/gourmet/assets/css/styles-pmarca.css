@@ -1,0 +1,483 @@
+/********GENERALES********/
+
+body {
+	font-family: 'Abel', sans-serif!important;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 18px!important;
+	line-height: 30px;
+}
+
+.pm_redesEquipo a,
+.pm_boxRss a {
+	color: #c44736;
+	transition: all 1s;
+}
+
+.pm_redesEquipo a:hover,
+.pm_boxRss a:hover {
+	color: #252527;
+}
+
+img {
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	margin: 0;
+}
+
+section {
+	width: 100%;
+	padding: 60px 0;
+	background-color: #FFF;
+}
+
+.pm_colorPrimarioBack {
+	background-color: #c44736;
+}
+
+.pm_colorPrimarioFont {
+	color: #c44736;
+}
+
+.pm_colorSecundarioBack {
+	background-color: #252527;
+}
+
+.pm_colorAcentoBack {
+	background-color: #c4473617;
+}
+
+.pm_colorAcentoSecundarioBack {
+	background-color: #25252717;
+}
+
+.pm_sectionSombra {
+	background: rgb(249, 187, 32);
+	background: -moz-linear-gradient(180deg, rgba(249, 187, 32, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(249, 187, 32, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(180deg, rgba(249, 187, 32, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9bb20", endColorstr="#000000", GradientType=1);
+}
+
+.pm_lineaCenter {
+	margin: 0 auto 60px;
+}
+
+/********SECCION ACERCA DE *********/
+
+.pm_tituloSeccion {
+	font-size: 40px;
+}
+
+.pm_tituloSeccion h1 {
+	text-align: left;
+}
+
+.pm_tituloSeccion.pm_margenPrincipal {
+	margin-top: 113px;
+}
+
+.pm_divisionTitulo {
+	width: 250px;
+	height: 4px;
+	display: inline-block;
+	margin-bottom: 60px;
+}
+
+.pm_boxImg {
+	width: 100%;
+}
+
+.pm_boxImg img {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+/********SECCIÓN HISTORIA***********/
+
+.pm_boxImgGde img {
+	width: 100%;
+	height: 450px;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+/*******SECCION EXPERIENCIA******/
+
+.pm_boxBullets {
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 27px #ccc;
+}
+
+.pm_boxBullets ul li {
+	padding-left: 2rem;
+	background-image: url("../images/landing-marca/star.svg");
+	background-position: 0 4px;
+	background-size: 1.2rem 1.2rem;
+	background-repeat: no-repeat;
+	list-style-type: none;
+}
+
+/*********SECCION EVOLUCIÓN**********/
+
+.pm_boxTimeLine {
+	width: 100%;
+	overflow: hidden;
+	overflow-x: scroll;
+}
+
+.pm_timeLine {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0;
+}
+
+.pm_lineaTimeLine {
+	width: 100%;
+	height: 3px;
+	margin: 40px 0;
+}
+
+.pm_fecha {
+	margin-bottom: 20px;
+	padding: 0px 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pm_li.pm_complete .pm_infoTimeLine {
+	border-top: 2px solid #252527;
+}
+
+.pm_infoTimeLine {
+	padding: 0px 30px;
+	display: flex;
+	justify-content: center;
+	border-top: 2px solid #D6DCE0;
+	position: relative;
+	padding-top: 15px;
+	width: 291px;
+	height: 125px;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.pm_li.pm_complete .pm_infoTimeLine:before {
+	background-color: #c44736;
+	border: none;
+}
+
+.pm_infoTimeLine:before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	background-color: white;
+	border-radius: 18px;
+	border: 1px solid #ddd;
+	position: absolute;
+	top: -11px;
+	left: 42%;
+}
+
+/* Barra de desplazamiento */
+
+.pm_boxTimeLine::-webkit-scrollbar {
+	width: 8px;
+	background-color: #c4473617;
+	border-radius: 20px;
+	height: initial;
+}
+
+::-webkit-scrollbar:window-inactive {
+	display: none;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #c44736;
+	border-radius: 6px;
+}
+
+.pm_instruccionesTime {
+	margin-top: 10px;
+	display: block;
+}
+
+/*********SECCION VALORES*********/
+
+.pm_descripcionValores {
+	width: 51%;
+	margin: 0 auto 60px;
+	text-align: center;
+	float: initial;
+}
+
+.pm_boxValores {
+	display: flex;
+}
+
+.pm_listaValores {
+	list-style-type: none;
+}
+
+.pm_valor {
+	display: inline-block;
+	margin: 0 28px;
+	font-size: 25px;
+}
+
+.pm_valor i {
+	color: #c44736;
+}
+
+/*************SECCION EQUIPO**********/
+
+.pm_boxCardEquipo {
+	width: 200px;
+	margin: 20px auto;
+}
+
+.pm_tituloEquipo {
+	font-size: 18px;
+	margin-bottom: 60px;
+}
+
+.pm_nombreEquipo {
+	display: inline-block;
+}
+
+.pm_nombreEquipo h3 {
+	font-size: 21px;
+	margin-top: 10px;
+}
+
+.pm_boxImgEquipo {
+	width: 200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.pm_boxImgEquipo img {
+	border-radius: 15px;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.pm_redesEquipo {
+	margin-top: 10px;
+}
+
+.pm_redesEquipo a i {
+	margin-right: 11px;
+	font-size: 18px;
+}
+
+.pm_tabsEquipo .nav-item {
+	margin: 0 auto;
+}
+
+.pm_tabsEquipo {
+	margin: 40px 0;
+}
+
+.pm_tabsEquipo .nav-link {
+	color: #c44736!important;
+	background-color: #c4473617!important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+	background-color: #c44736!important;
+	color: #FFF!important;
+}
+
+.pm_cargoEquipo {
+	font-size: 16px;
+	width: 100%;
+	height: 30px;
+	display: inline-block;
+}
+
+/*.pm_tabPaneScroll {
+	height: 700px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}*/
+
+/*********SECCION MISION VISION***********/
+
+.pm_boxMisVis {
+	padding: 20px;
+	border-radius: 15px;
+	height: 475px;
+}
+
+.pm_boxRss i {
+	margin: 0 20px;
+	font-size: 30px;
+}
+
+/*********SECCION CONTACTANOS**********/
+
+.pm_tituloMail {
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+.pm_tituloMail p {
+	margin-top: 10px;
+}
+
+/*****************MEDIA QUERIES*****************/
+
+/*********************0 a 575.98*******************/
+
+@media (max-width: 575.98px) {
+	.pm_boxImg {
+		margin-bottom: 20px;
+	}
+	.pm_descripcionValores {
+		width: 100%;
+	}
+	.pm_valor {
+		margin: 15px 40px;
+	}
+	.pm_tabsEquipo .nav-item {
+		margin: 10px auto;
+	}
+	.tab-pane {
+		height: 600px;
+		overflow: hidden;
+		overflow-y: scroll;
+	}
+	.pm_boxMisVis {
+		padding: 20px;
+		border-radius: 15px;
+		/* height: auto; */
+		margin: 20px 0;
+	}
+	.pm_boxRss i {
+		margin: 10px 20px;
+		font-size: 25px;
+		display: inline-block;
+	}
+	.pm_cargoEquipo {
+		height: auto;
+	}
+	.pm_tituloMail p {
+		font-size: 15px;
+	}
+}
+
+/*********************576 a 767.98*******************/
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.pm_boxImg {
+		margin-bottom: 20px;
+	}
+	.pm_descripcionValores {
+		width: 100%;
+	}
+	.pm_valor {
+		margin: 7px 18px;
+	}
+	.pm_tabsEquipo .nav-item {
+		margin: 10px auto;
+	}
+	.tab-pane {
+		height: 600px;
+		overflow: hidden;
+		overflow-y: scroll;
+	}
+	.pm_boxMisVis {
+		padding: 20px;
+		border-radius: 15px;
+		/* height: auto; */
+		margin: 20px 0;
+	}
+	.pm_boxRss i {
+		margin: 0 10px;
+		font-size: 25px;
+	}
+	.pm_cargoEquipo {
+		height: auto;
+	}
+}
+
+/*********************768 a 991.98*******************/
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.pm_boxImg img {
+		height: 530px;
+	}
+	.pm_boxImgGde img {
+		height: 668px;
+	}
+	.pm_descripcionValores {
+		width: 90%;
+	}
+	.pm_valor {
+		margin: 15px 27px;
+	}
+	.tab-pane {
+		height: 600px;
+		overflow: hidden;
+		overflow-y: scroll;
+	}
+	/* .pm_boxMisVis {
+		height: auto;
+	} */
+	.pm_valor {
+		margin: 15px 24px;
+		font-size: 22px;
+	}
+}
+
+/*********************992 a 1199.98*******************/
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.pm_boxImg img {
+		height: 580px;
+	}
+	.pm_boxImgGde img {
+		height: 547px;
+	}
+	.pm_valor {
+		margin: 0 10px;
+		font-size: 20px;
+	}
+	.pm_boxMisVis {
+		height: 540px;
+	}
+}
+
+/*********************1200 a 1399.98*******************/
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+	.pm_boxImg img {
+		height: 470px;
+	}
+	.pm_valor {
+		margin: 0 12px;
+	}
+	/* .pm_boxMisVis {
+		height: 471px;
+	} */
+}

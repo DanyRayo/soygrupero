@@ -1,0 +1,237 @@
+/* Estilos globales header  */
+:root {
+    --rojo: #e00f25;
+    --verde: #47ab34;
+    --azul: #29509c;
+    --morado: #614a96;
+    --azulclaro: #417abd;
+    --amarillo: #ffce00;
+    --negro: #000000;
+    --blanco: #ffffff;
+    --montserrat: 'Montserrat', sans-serif;
+    --degradado: linear-gradient(45deg, var(--rojo), var(--verde), var(--azul), var(--morado), var(--azulclaro));
+    /* Agregar degradado de rojo a azul de forma diagonal */
+    --gradiente-diagonal: linear-gradient(45deg, var(--rojo), var(--morado), var(--azul));
+    --bg-color: #f5f5f5;
+    --borde: 2px solid #000000b7;
+    --bg-rojo: linear-gradient(0deg, rgba(224, 15, 37, 0) 50%, rgba(224, 15, 37, 1) 100%);
+    --prueba: 1px solid red;
+}
+
+/* Footer general normal */
+/* ------------Footer---------- */
+.footer *{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    transition: background-color .35s ease, color .35s ease, border-color .35s ease;
+}
+
+.footer *,
+.footer *::before,
+.footer *::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 50px;
+    border-radius: 50px 50px 0 0;
+    z-index: 15;
+}
+
+.footer li{
+    list-style: none;
+}
+
+.footer a{
+    display: block;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+
+.footer-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--blanco);
+}
+
+.footer-header__logo {
+    flex: 1;
+}
+
+.footer-logo {
+    max-width: 100%;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.footer-sales {
+    display: block;
+    flex: 1;
+    font-size: clamp(12px, 1.3vw, 15px);
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer-social {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.footer-icon {
+    font-size: clamp(20px, 2.5vw, 30px);
+}
+
+.footer-marcas__grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid var(--blanco);
+}
+
+.footer-marca__logo {
+    width: 100px;
+    height: auto;
+}
+
+.filter-white {
+    filter: brightness(0) invert(1);
+}
+
+.footer-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.footer-info__copy {
+    flex: 1;
+    border-right: 1px solid var(--blanco);
+    padding-right: 20px;
+}
+
+.footer-info__terms {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+@media (max-width: 992px) {
+    .hero {
+        padding: 0 50px;
+    }
+
+    .destacado-title {
+        padding-left: 50px;
+    }
+
+    .player {
+        padding: 20px 15px;
+    }
+
+    .player__layout {
+        grid-template-columns: 1fr;
+    }
+
+    .player__playlist {
+        margin-top: 30px;
+    }
+
+    .player__more {
+        bottom: -20px;
+    }
+
+    .footer-info__terms {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .footer-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-social {
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .footer-marcas__grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .footer-marca {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-marca__logo {
+        width: 80px;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 15px;
+        gap: 20px;
+    }
+
+    .footer-info__copy {
+        border-top: 1px solid var(--blanco);
+        border-right: none;
+        padding: 20px 0 0 0;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .footer-info {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .footer-marcas__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .footer-marca__logo {
+        width: 70px;
+    }
+}

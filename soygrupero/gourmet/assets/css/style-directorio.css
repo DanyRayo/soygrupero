@@ -1,0 +1,218 @@
+/* RESET LOCAL Y VARIABLES */
+:root{
+    --primario: #a01220;
+    --black: #000000;
+}
+
+.dgm-container-fluid {
+    --dgm-primario: #a01220;
+    --dgm-black: #000000;
+    --dgm-white: #ffffff;
+    --dgm-text-gray: #e0e0e0;
+
+    /* Color con opacidad (0.05) */
+    --dgm-primario-rgb: 160, 18, 32;
+    --dgm-primario-alpha: rgba(var(--dgm-primario-rgb), 0.05);
+    
+    /* Reset local: Forzamos box-sizing y fuentes */
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding: 80px 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dgm-container-fluid *, 
+.dgm-container-fluid *::before, 
+.dgm-container-fluid *::after {
+    box-sizing: inherit; /* Asegura que todos los hijos hereden el box-sizing */
+    margin: 0;
+    padding: 0;
+}
+
+.dgm-main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dgm-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.dgm-title {
+    font-size: 42px; 
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+    color: var(--dgm-primario);
+}
+
+.dgm-description {
+    font-size: 18px;
+    color: var(--dgm-black);
+    max-width: 100%;
+    margin: 50px auto;
+}
+
+.dgm-subtitle {
+    font-size: 28px;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    color: var(--dgm-primario);
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.dgm-subtitle::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 4px;
+    background-color: var(--dgm-primario);
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* GRID Y CARDS */
+.dgm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.dgm-card {
+    background: var(--dgm-primario-alpha);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--dgm-text-gray);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    position: relative;
+}
+
+.dgm-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--dgm-primario);
+    background: var(--dgm-primario-alpha);
+}
+
+.dgm-card.hidden {
+  display: none;
+}
+
+.dgm-card__img-container {
+    padding: 20px 20px 0 20px;
+}
+
+.dgm-card__img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+}
+
+.dgm-card:hover .dgm-card__img {
+    filter: grayscale(0%);
+}
+
+.dgm-card__content {
+    padding: 25px;
+}
+
+.dgm-card__name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--dgm-primario);
+}
+
+.dgm-card__role {
+    font-size: 14px;
+    color: var(--dgm-black);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.dgm-card__socials {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.dgm-card__social {
+    font-size: 18px;
+    color: var(--dgm-primario);
+    transition: transform .2s ease, color .2s ease;
+}
+
+.dgm-card__social:hover {
+    transform: scale(1.2);
+}
+
+/* ---- ESTILOS PARA LAS TABS ---- */
+.dgm-grid-tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.dgm-tabs {
+  display: flex;
+  margin: 50px auto;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.dgm-tab-btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  border: 1px solid var(--dgm-primario);
+  background: transparent;
+  color: var(--dgm-primario);
+  font-family: var(--dgm-montserrat);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dgm-tab-btn:hover {
+  background: var(--dgm-primario-alpha);
+}
+
+.dgm-tab-btn.active {
+  background: var(--dgm-primario);
+  color: var(--dgm-white);
+}
+
+/* Misión y visión */
+.card-MisVis {
+    border: 1px solid #e5e5e5;
+    padding: 30px;
+    border-radius: 12px;
+    height: 100%;
+}
+
+.linea-divisora-MisVis {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primario);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dgm-title { font-size: 32px; }
+    .dgm-container-fluid { padding: 50px 15px; }
+}
