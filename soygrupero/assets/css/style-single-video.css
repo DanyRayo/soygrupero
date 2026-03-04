@@ -425,7 +425,7 @@ body.bk-videoteca {
 }
 
 .Video-SG {
-	background-color: #0eba0b;
+	background-color: #e00f25;
 }
 
 .Video-GM {
@@ -1590,7 +1590,7 @@ input[type=checkbox] {
 }
 
 .barraSusNEWS a:hover {
-	color: #f23e42;
+	color: #e00f25;
 	text-decoration: none;
 }
 
@@ -2222,7 +2222,7 @@ input[type=checkbox] {
 	color: #fff;
 	text-decoration: underline;
 	text-underline-position: under;
-	text-decoration-color: #f23e42;
+	text-decoration-color: #e00f25;
 	margin: 0px 0px 20px 0px!important;
 	float: left;
 	font-weight: 600;
@@ -2248,7 +2248,7 @@ input[type=checkbox] {
 
 .contBH form button {
 	float: right;
-	background: #f23e42;
+	background: #e00f25;
 	border: none;
 	border-radius: 14px;
 	width: 45px;
@@ -2271,7 +2271,7 @@ input[type=checkbox] {
 }
 
 .tagBH a {
-	background: #f23e42;
+	background: #e00f25;
 	border-radius: 10pc;
 	padding: 6px 20px;
 	font-size: 14px;
@@ -2324,7 +2324,7 @@ input[type=checkbox] {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	background: #f23e42;
+	background: #e00f25;
 	padding: 3px 10px;
 	font-size: 12px;
 	font-weight: bold;
@@ -2588,7 +2588,7 @@ input[type=checkbox] {
 	position: fixed;
 	top: 45%;
 	right: 0px;
-	background: #f23e42;
+	background: #e00f25;
 	border-radius: 10px 0px 0px 10px;
 	display: none;
 	outline: none;
@@ -2648,7 +2648,7 @@ input[type=checkbox] {
 	float: left;
 	width: -webkit-fill-available;
 	width: -moz-available;
-	background: #f23e42;
+	background: #e00f25;
 	height: 60px;
 	position: relative;
 }
@@ -2773,7 +2773,7 @@ input[type=checkbox] {
 .menuCategorias2020 {
 	float: left;
 	width: 80%;
-	background: #f23e42;
+	background: #e00f25;
 	display: none;
 	position: absolute;
 	top: 5px;
@@ -2876,7 +2876,7 @@ input[type=checkbox] {
 	float: left;
 	width: 62%;
 	padding: 10px 0px;
-	color: #f23e42;
+	color: #e00f25;
 	font-size: 12px;
 }
 
@@ -2927,7 +2927,7 @@ input[type=checkbox] {
 }
 
 .icono20 i:hover {
-	color: #f23e42;
+	color: #e00f25;
 }
 
 .btnCompMobile,
@@ -3091,7 +3091,7 @@ input[type=checkbox] {
 }
 
 .txtdescH .strong {
-	color: #f23e42;
+	color: #e00f25;
 	font-weight: 800;
 }
 
@@ -3493,7 +3493,7 @@ html body .wpurp-container {
 }
 
 #mc_embed_signup .button {
-	background: #f23e42!important;
+	background: #e00f25!important;
 	border-radius: 50px!important;
 	width: -webkit-fill-available!important;
 	margin: 20px 20px 0 0 !important;
@@ -3548,7 +3548,7 @@ html body .wpurp-container {
 
 .btnRecetaListado {
 	padding: 0 10px!important;
-	border-left: solid #f23e42 2px;
+	border-left: solid #e00f25 2px;
 	margin: 20px;
 	font-size: 15px!important;
 	width: 100%;
@@ -3832,7 +3832,7 @@ input:focus {
 	float: left;
 	width: 100%;
 	height: 300px;
-	background: #f23e42;
+	background: #e00f25;
 	height: auto;
 	display: none
 }
@@ -3868,7 +3868,7 @@ input:focus {
 }
 
 .iconoCompartir.pint a {
-	color: #f23e42!important
+	color: #e00f25!important
 }
 
 .iconoCompartir.wa a {
@@ -4181,7 +4181,7 @@ input:focus {
 	border-radius: 50px;
 	margin: 40px 0 0;
 	padding: 10px;
-	background: #f23e42;
+	background: #e00f25;
 	border: 0;
 	color: #fff;
 	font-size: 15px;
@@ -4618,7 +4618,7 @@ article img {
 	margin-right: 10px;
 	font-size: 15px;
 	margin-bottom: 20px;
-	background: #f23e42;
+	background: #e00f25;
 	text-transform: uppercase;
 }
 
@@ -5212,15 +5212,15 @@ article img {
 	width: 100%;
 	text-align: center!important;
 	font-size: 22px!important;
-	color: #f23e42;
+	color: #e00f25;
 }
 
 .activeStar {
-	color: #f23e42;
+	color: #e00f25;
 }
 
 .activeStar2 {
-	color: #f23e42;
+	color: #e00f25;
 	font-size: 22px;
 	text-align: center;
 }
@@ -5266,12 +5266,12 @@ article img {
 
 .completo {
 	text-decoration: line-through;
-	text-decoration-color: #f23e42;
+	text-decoration-color: #e00f25;
 	color: #c8c4c4
 }
 
 .completo .svg-inline--fa.fa-check-circle.fa-w-16 {
-	color: #f23e42!important
+	color: #e00f25!important
 }
 
 .listaReceta p {
@@ -5695,7 +5695,7 @@ article img {
 
 .btnVolverError span {
 	font-size: 16px;
-	background: #f23e42;
+	background: #e00f25;
 	padding: 5px 30px;
 	border-radius: 50px;
 	letter-spacing: 1px;
@@ -6313,7 +6313,7 @@ article img {
 		position: absolute;
 		bottom: inherit;
 		right: 0;
-		background: #f23e42;
+		background: #e00f25;
 		padding: 8px 10px;
 		font-size: 14px;
 		font-weight: bold;
@@ -6347,7 +6347,7 @@ article img {
 		left: 0;
 		right: 0;
 		top: 0;
-		background: #f23e42;
+		background: #e00f25;
 		z-index: 4;
 		width: -webkit-fill-available;
 		width: -moz-available;
@@ -6465,7 +6465,7 @@ article img {
 		float: left;
 		width: 70%;
 		padding: 10px 0px;
-		color: #f23e42;
+		color: #e00f25;
 		font-size: 13px;
 		font-weight: bold;
 		height: 52px;
@@ -6484,7 +6484,7 @@ article img {
 		right: 0;
 		margin: 17px 15px;
 		font-size: 18px;
-		color: #f23e42;
+		color: #e00f25;
 		background: #ffffff;
 		border-radius: 50px;
 		width: 25px;
