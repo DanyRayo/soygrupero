@@ -367,93 +367,56 @@
             <!--pop-up-descargable-->
             <!--pop-up-registro-->
             <!--pop-up-registro-->
-            <link rel="stylesheet" type="text/css" href="https://grupomedios.com/pymes/css/form-pymes.css">
-            <section class="Secc-general-FormPymes">
+
+            <link rel="stylesheet" type="text/css" href="./assets/css/style-pymes.css">
+            <section class="gm-form-pymes">
                 <h1 class="TituloSeccion">PUBLICIDAD A LA MEDIDA PARA TU EMPRESA</h1>
                 <div class="imgPymes">
                     <img src="https://grupomedios.com/pymes/images/pymesSoyGrupero.jpg" alt="Pymes">
                 </div>
-                <div class="inicioFormP">
-                    <!--inicioFormP-->
-                    <div class="txtBorde">
-                        <span class="txtPymes">Contamos con opciones de <b>publicidad a la medida</b> para las Pequeñas
-                            y Medianas Empresas del país.</span>
-                        <span class="iconoPymes">
-                            <img src="https://grupomedios.com/pymes/images/iconoPymes.png" alt="Icono Pymes">
-                        </span>
-                        <span class="linDec">
-                            <p></p>
-                        </span>
-                        <span class="txtPymes"><b>Deja tus datos y un especialista se pondrá en contacto
-                                contigo.</b></span>
-                    </div>
-                    <!-- FORMULARIO MAILCHIMP -->
-                    <div class="mch_formPymesCont">
-                        <!--mch_formPymesCont-->
-                        <!-- Begin Mailchimp Signup Form -->
-                        <div id="mc_embed_shell">
-
-                            <div id="mc_embed_signup">
-                                <form
-                                    action="https://grupomedios.us6.list-manage.com/subscribe/post?u=08af1feb85af6c9e9a0a60740&amp;id=1e902393c2&amp;f_id=00350ae0f0"
-                                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                                    class="validate" target="_self" novalidate="">
-                                    <div id="mc_embed_signup_scroll">
-                                        <div class="indicates-required"><span class="asterisk">*</span> indicates
-                                            required</div>
-                                        <div class="mc-field-group"><label for="mce-EMAIL">Correo electrónico: <span
-                                                    class="asterisk">*</span></label><input type="email" name="EMAIL"
-                                                class="required email" id="mce-EMAIL" required="" value=""></div>
-                                        <div class="mc-field-group"><label for="mce-MMERGE28">Nombre completo: <span
-                                                    class="asterisk">*</span></label><input type="text" name="MMERGE28"
-                                                class="required text" id="mce-MMERGE28" required="" value=""></div>
-                                        <div class="mc-field-group"><label for="mce-PHONE">Teléfono: <span
-                                                    class="asterisk">*</span></label><input type="text" name="PHONE"
-                                                class="REQ_CSS" id="mce-PHONE" value=""></div>
-                                        <div class="mc-field-group"><label for="mce-MMERGE14">Empresa: <span
-                                                    class="asterisk">*</span></label><input type="text" name="MMERGE14"
-                                                class="required text" id="mce-MMERGE14" required="" value=""></div>
-                                        <div class="mc-field-group"><label for="mce-MMERGE19">Presupuesto estimado <span
-                                                    class="asterisk">*</span></label><input type="number"
-                                                name="MMERGE19" class="required number" id="mce-MMERGE19" required=""
-                                                value=""></div>
-                                        <div class="mc-field-group"><label for="mce-MMERGE24">Objetivo de la campaña
-                                                <span class="asterisk">*</span></label><input type="text"
-                                                name="MMERGE24" class="required text" id="mce-MMERGE24" required=""
-                                                value=""></div>
-                                        <div class="mc-field-group"><label for="mce-MMERGE25">Comentarios <span
-                                                    class="asterisk">*</span></label><input type="text" name="MMERGE25"
-                                                class="required text" id="mce-MMERGE25" required="" value=""></div>
-                                        <div class="mc-field-group input-group"><strong>PYMES GM </strong>
-                                            <ul>
-                                                <li><input type="checkbox" name="group[56833][256]"
-                                                        id="mce-group[56833]-56833-0" value=""><label
-                                                        for="mce-group[56833]-56833-0">PYMES GM</label></li>
-                                            </ul>
-                                        </div>
-                                        <div id="mce-responses" class="clear">
-                                            <div class="response" id="mce-error-response" style="display: none;"></div>
-                                            <div class="response" id="mce-success-response" style="display: none;">
-                                            </div>
-                                        </div>
-                                        <div aria-hidden="true" style="position: absolute; left: -5000px;"><input
-                                                type="text" name="b_08af1feb85af6c9e9a0a60740_1e902393c2" tabindex="-1"
-                                                value=""></div>
-                                        <div class="clear"><input type="submit" name="subscribe"
-                                                id="mc-embedded-subscribe" class="button" value="Subscribe"></div>
-                                    </div>
-                                </form>
-                            </div>
+                <section class="formularioPymes">
+                    <h2 class="TituloFormulario">Contamos con opciones de <b>publicidad a la medida</b> para las
+                        Pequeñas y Medianas Empresas del país.</h2>
+                    <form action="#" method="POST" class="formPymes">
+                        <div class="form-group">
+                            <label for="nombre">Nombre: <span class="required-asterisk">*</span></label>
+                            <input type="text" id="nombre" name="nombre">
+                            <span class="error-msg" id="error-nombre">Este campo es obligatorio</span>
                         </div>
-
-                        <!--mc_embed_shell-->
-                    </div>
-                    <!--mch_formPymesCont-->
-                    <div class="txtBorde abajo">
-                        <!--borde-->
-                        <span>.</span><br><br><br><br>
-                    </div>
-                </div>
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico: <span class="required-asterisk">*</span></label>
+                            <input type="email" id="correo" name="correo">
+                            <span class="error-msg" id="error-correo">Este campo es obligatorio</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">Empresa: <span class="required-asterisk">*</span></label>
+                            <input type="text" id="empresa" name="empresa">
+                            <span class="error-msg" id="error-empresa">Este campo es obligatorio</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono: <span class="required-asterisk">*</span></label>
+                            <input type="tel" id="telefono" name="telefono">
+                            <span class="error-msg" id="error-telefono">Este campo es obligatorio</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="presupuesto">Presupuesto estimado: <span class="required-asterisk">*</span></label>
+                            <input type="number" id="presupuesto" name="presupuesto">
+                            <span class="error-msg" id="error-presupuesto">Este campo es obligatorio</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="objetivo">Objetivo de la campaña: <span class="required-asterisk">*</span></label>
+                            <input type="text" id="objetivo" name="objetivo">
+                            <span class="error-msg" id="error-objetivo">Este campo es obligatorio</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="comentarios">Comentarios: <span class="required-asterisk">*</span></label>
+                            <textarea id="comentarios" name="comentarios"></textarea>
+                            <span class="error-msg" id="error-comentarios">Este campo es obligatorio</span>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar</button>
+                    </form>
+                </section>
+                <script src="./assets/js/formulario-pymes.js"></script>
                 <!--inicioFormP-->
             </section>
         </div>

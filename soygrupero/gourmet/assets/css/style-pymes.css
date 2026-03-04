@@ -1,0 +1,223 @@
+/* ===================================================== */
+/* COMPONENTE AISLADO - FORMULARIO PYMES GRUPO MEDIOS  */
+/* ===================================================== */
+:root {
+    --primario: #831933;
+    --secundario: #c2af9b;
+    --negro: #000000;
+    --blanco: #ffffff;
+    --montserrat: 'Montserrat', sans-serif;
+    /* Cambiar el color primario a RGBA */
+    --sombrado: rgba(224, 15, 37, 1);
+}
+
+
+
+.gm-form-pymes,
+.gm-form-pymes * {
+    box-sizing: border-box;
+}
+
+.gm-form-pymes {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 90px 20px;
+
+    /* background: var(--degradado); */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    font-family: var(--montserrat);
+}
+
+/* Reset interno contra CSS legacy */
+.gm-form-pymes div,
+.gm-form-pymes form,
+.gm-form-pymes section,
+.gm-form-pymes input,
+.gm-form-pymes textarea,
+.gm-form-pymes label {
+    float: none !important;
+}
+
+/* ===================== */
+/* TITULO PRINCIPAL */
+/* ===================== */
+
+.gm-form-pymes .TituloSeccion {
+    font-size: 38px;
+    margin-bottom: 40px;
+    color: var(--negro);
+}
+
+/* ===================== */
+/* IMAGEN */
+/* ===================== */
+
+.gm-form-pymes .imgPymes {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.gm-form-pymes .imgPymes img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+/* ===================== */
+/* CONTENEDOR FORM */
+/* ===================== */
+
+.gm-form-pymes .formularioPymes {
+    width: 100%;
+    max-width: 950px;
+
+    padding: 0px 60px 60px 60px;
+    border-radius: 24px;
+
+    background: rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+
+    color: var(--negro);
+}
+
+/* ===================== */
+/* TITULO FORM */
+/* ===================== */
+
+.gm-form-pymes .TituloFormulario {
+    font-size: clamp(20px, 2.5vw, 30px);
+    margin-bottom: 45px;
+    line-height: 1.4;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===================== */
+/* FORM UNA COLUMNA */
+/* ===================== */
+
+.gm-form-pymes .formPymes {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+}
+
+/* ===================== */
+/* CAMPOS */
+/* ===================== */
+
+.gm-form-pymes .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.gm-form-pymes .form-group label {
+    margin-bottom: 8px;
+    font-size: clamp(15px, 1.5vw, 18px);
+    font-weight: 500;
+    opacity: 0.9;
+    color: var(--negro);
+}
+
+.gm-form-pymes .form-group input,
+.gm-form-pymes .form-group textarea {
+    padding: 16px 18px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    background: rgba(255,255,255,0.1);
+    color: var(--negro);
+    font-size: clamp(15px, 1.5vw, 18px);
+    outline: none;
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+.gm-form-pymes .form-group input:focus,
+.gm-form-pymes .form-group textarea:focus {
+    border-color: var(--primario);
+    background: rgba(255,255,255,0.18);
+}
+
+.gm-form-pymes .form-group textarea {
+    min-height: 140px;
+    resize: none;
+}
+
+/* ===================== */
+/* BOTON */
+/* ===================== */
+
+.gm-form-pymes .btn-submit {
+    margin-top: 15px;
+    padding: 18px;
+    border-radius: 16px;
+    border: none;
+    font-size: clamp(16px, 1.5vw, 18px);
+    font-weight: 600;
+    cursor: pointer;
+
+    background-color: var(--primario);
+    color: var(--blanco);
+
+    transition: 0.3s ease;
+}
+
+.gm-form-pymes .btn-submit:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px var(--sombrado);
+}
+
+.required-asterisk {
+    color: var(--primario);
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+.error-msg {
+    display: none;
+    color: var(--blanco);
+    background-color: var(--primario);
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.input-error {
+    border-color: var(--primario) !important;
+    outline-color: var(--primario) !important;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+    .gm-form-pymes .TituloSeccion {
+        font-size: 28px;
+    }
+
+    .gm-form-pymes .formularioPymes {
+        padding: 35px 25px;
+    }
+
+    .gm-form-pymes .TituloFormulario {
+        font-size: 20px;
+    }
+}
