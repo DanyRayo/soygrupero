@@ -1345,12 +1345,14 @@ a:hover {
     position: fixed;
     bottom: 103px;
     right: 14px;
-    background: #c6462f;
+    background: #8d0a17;
     border-radius: 30px;
     display: none;
     outline: none;
     border-color: transparent;
     z-index: 3;
+    border: 1.5px solid #ffffff;
+    transition: all 300ms ease-in-out;
 }
 .scroll-top .fa.fa-chevron-up {
     display: inline-block;
@@ -1361,7 +1363,7 @@ a:hover {
     cursor: pointer;
     background: #393534;
     box-shadow: none;
-    border: none;
+    border: 1.5px solid #ffffff;
 }
 
 .nV2020 {
